@@ -1,4 +1,4 @@
-@use "./tools/variables";
+@use "./tools/variable";
 @import "./bootstrap/functions";
 @import "./bootstrap/variables";
 @import "./bootstrap/maps";
@@ -11,11 +11,15 @@
 @import "./bootstrap/utilities";
 @import "./bootstrap/utilities/api";
 @import "./tools/font";
+@import "./tools/link";
+@import "./section/hero.scss";
+@import "./section/header.scss";
+@import "./section/section-title.scss";
 
 html {
   body {
-    color: variables.$text-color;
-    background-color: variables.$background-color;
+    color: variable.$text-color;
+    background-color: variable.$background-color;
     font-family: "itim";
   }
 }
