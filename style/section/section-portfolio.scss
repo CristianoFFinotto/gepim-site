@@ -1,0 +1,66 @@
+.section-portfolio {
+  padding: 15vh 15vw;
+  position: relative;
+  height: 100vh;
+
+  .row {
+    display: flex;
+  }
+  .row:nth-of-type(1) {
+    justify-content: end;
+  }
+  .row:nth-of-type(2) {
+    justify-content: center;
+  }
+  .row:nth-of-type(3) {
+    align-items: end;
+  }
+
+  .row:last-of-type {
+    display: flex;
+    justify-content: end;
+  }
+
+  &__title {
+    font-size: 3vw;
+    width: 30%;
+    position: absolute;
+    top: 5vh;
+    text-align: center;
+
+    &--underlined {
+      font-style: italic;
+      border-bottom: 3px solid variable.$cto;
+      color: variable.$cto;
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 4vw;
+    }
+  }
+
+  &__image {
+    border-radius: 10px;
+  }
+
+  &__figcaption-image {
+    font-size: 1vw;
+  }
+
+  /*** CTO ***/
+
+  &__cto {
+    height: fit-content;
+    font-size: 2vw;
+    background-color: variable.$cto;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+
+    &-link:hover {
+      color: variable.$text-color-hover;
+    }
+  }
+
+  /*** - ***/
+}

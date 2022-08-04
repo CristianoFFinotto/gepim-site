@@ -9,35 +9,29 @@
       padding: 0;
       margin: 0;
       font-size: 1vw;
+      align-items: center;
+      justify-content: space-around;
 
-      .row {
-        width: 100%;
-
-        .col {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          height: 100%;
-        }
-
-        /*** CTO ***/
-
-        .col:last-of-type {
-          background-color: variable.$cto;
-          filter: drop-shadow(5px 5px 10px variable.$background-color);
-          border-radius: 10px;
-        }
-
-        /*** - ***/
+      li:nth-of-type(1) {
+        text-align: center;
       }
 
-      .row:nth-of-type(1) {
-        .col:nth-of-type(1) {
-          li {
-            text-align: center;
-          }
-        }
+      /*** CTO ***/
+
+      li:last-of-type {
+        background-color: variable.$cto;
+        border-radius: 10px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 20px;
       }
+
+      li:last-of-type:hover {
+        filter: drop-shadow(5px 5px 10px variable.$background-color);
+      }
+
+      /*** - ***/
 
       &-link:hover {
         color: variable.$text-color-hover;
