@@ -5656,18 +5656,21 @@ a {
 }
 
 .section-service {
-  height: 100vh;
   background-color: #d9d9d9;
+  height: 100vh;
 }
 .section-service__content {
   display: flex;
   flex-wrap: wrap;
-  height: 80%;
 }
 .section-service__content .row {
   margin-left: 12px;
   margin-right: 12px;
   width: 100%;
+}
+.section-service__content .row:nth-of-type(2) {
+  height: fit-content;
+  margin-top: 25vh;
 }
 .section-service__content .row:nth-of-type(2) .col {
   display: flex;
@@ -5680,11 +5683,74 @@ a {
   text-decoration: underline;
   color: #cf5c36;
 }
-.section-service__content-figcaption-image {
+.section-service__content figure {
   text-align: center;
 }
-.section-service__content-figcaption-image-cto {
+.section-service__content-image {
+  width: 12vw;
+}
+.section-service__content-image-caption {
+  font-size: 1.5vw;
+  color: #646461;
+  /*  color: variable.$text-color; */
+}
+.section-service__content-image-caption-cto {
   text-align: end;
+  font-size: 1vw;
+}
+.section-service__content-image-caption-cto a {
+  color: #cf5c36;
+  text-decoration: underline;
+}
+.section-service__content-image-caption-cto a:hover {
+  color: #b1aea5;
+}
+
+.section-partner {
+  background-color: #d9d9d9;
+  height: 100vh;
+  padding-top: 16vh;
+}
+.section-partner__title {
+  font-size: 4vw;
+  font-style: italic;
+  text-align: center;
+  width: fit-content;
+  position: relative;
+  background-color: transparent;
+  z-index: 1;
+}
+.section-partner__title::before {
+  content: "";
+  height: calc(100% + 2vh);
+  width: calc(100% + 2vw);
+  position: absolute;
+  left: -1vw;
+  top: -1vh;
+  background-color: #cf5c36;
+  transform: rotate(-2deg);
+  z-index: -1;
+  border-radius: 10px;
+}
+
+.section-footer {
+  font-size: 2vw;
+}
+.section-footer-separator {
+  display: flex;
+  justify-content: center;
+}
+.section-footer-separator__separator {
+  border: 1px solid #646461;
+  border-radius: 10px;
+  opacity: 1;
+  width: 30%;
+}
+.section-footer-credits {
+  font-size: 1vw;
+  text-align: center;
+  opacity: 0.5;
+  padding-bottom: 2vh;
 }
 
 @media (min-width: 1440px) {
@@ -5703,6 +5769,9 @@ a {
   border-radius: 20px;
 }
 
+html {
+  scroll-behavior: smooth !important;
+}
 html body {
   color: #fefbf3;
   background-color: #0b0a07;

@@ -1,0 +1,22 @@
+.section-footer {
+  font-size: 2vw;
+
+  &-separator {
+    display: flex;
+    justify-content: center;
+
+    &__separator {
+      border: 1px solid variable.$text-color-section-service;
+      border-radius: 10px;
+      opacity: 1;
+      width: 30%;
+    }
+  }
+
+  &-credits {
+    font-size: 1vw;
+    text-align: center;
+    opacity: 0.5;
+    padding-bottom: 2vh;
+  }
+}

@@ -60,7 +60,7 @@
 
                   <li>
                     <a
-                      href="#contattaci"
+                      href="#footer"
                       title="link che porta al footer dove ci sono i campi di contatto"
                       class="navbar__list-link"
                       >CONTATTACI</a
@@ -189,14 +189,20 @@
                   src="./img/home_FILL0_wght400_GRAD0_opsz48.svg"
                   alt=""
                   class="img-fluid section-service__content-image"
-                  width="300"
                 />
               </picture>
-              <figcaption class="section-service__content-figcaption-image">
-                immagine 3 <br />
-                <a href="" class="section-service__content-image-cto"
-                  >scopri di più -></a
-                >
+              <figcaption>
+                <p class="section-service__content-image-caption">
+                  PRONTO INTERVENTO
+                </p>
+                <p class="section-service__content-image-caption-cto">
+                  <a href="">scopri di più</a>
+                  <img
+                    src="./img/arrow_forward.svg"
+                    alt="freccia avanti"
+                    width="20"
+                  />
+                </p>
               </figcaption>
             </figure>
           </div>
@@ -207,15 +213,19 @@
                   src="./img/home_FILL0_wght400_GRAD0_opsz48.svg"
                   alt=""
                   class="img-fluid section-service__content-image"
-                  width="300"
                 />
               </picture>
-              <figcaption class="section-service__content-figcaption-image">
-                immagine 3
+              <figcaption>
+                <p class="section-service__content-image-caption">CONSULENZA</p>
+                <p class="section-service__content-image-caption-cto">
+                  <a href="">scopri di più</a>
+                  <img
+                    src="./img/arrow_forward.svg"
+                    alt="freccia avanti"
+                    width="20"
+                  />
+                </p>
               </figcaption>
-              <a href="" class="section-service__content-image-cto"
-                >scopri di più -></a
-              >
             </figure>
           </div>
           <div class="col">
@@ -225,19 +235,72 @@
                   src="./img/home_FILL0_wght400_GRAD0_opsz48.svg"
                   alt=""
                   class="img-fluid section-service__content-image"
-                  width="300"
                 />
               </picture>
-              <figcaption class="section-service__content-figcaption-image">
-                immagine 3 <br />
-                <a href="" class="section-service__content-image-cto"
-                  >scopri di più -></a
-                >
+              <figcaption>
+                <p class="section-service__content-image-caption">
+                  ASSISTENZA TELEFONICA
+                </p>
+                <p class="section-service__content-image-caption-cto">
+                  <a href="">scopri di più</a>
+                  <img
+                    src="./img/arrow_forward.svg"
+                    alt="freccia avanti"
+                    width="20"
+                  />
+                </p>
               </figcaption>
             </figure>
           </div>
         </div>
       </div>
     </section>
+
+    <section class="container-fluid section-partner">
+      <h2 class="container-fluid section-partner__title">
+        <strong>I NOSTRI PARTNERS</strong>
+      </h2>
+
+      <div style="height: 100%">
+        <div class="row">
+          <div class="col">
+            <picture> </picture>
+          </div>
+          <div class="col">
+            <picture> </picture>
+          </div>
+          <div class="col">
+            <picture> </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <img src="./img/waves-bottom.svg" alt="separatore a onda" />
+
+    <section class="container-fluid section-footer" id="footer">
+      <address>
+        <div class="row d-flex justify-content-center">
+          <div class="col-6 text-end">
+            <a href="">come</a>
+          </div>
+          <div class="col-6"><a href="">come</a></div>
+          <div class="col-6 text-end"><a href="">come</a></div>
+          <div class="col-6"><a href="">come</a></div>
+          <div class="col-6 text-end"><a href="">come</a></div>
+          <div class="col-6"><a href="">come</a></div>
+        </div>
+      </address>
+      <div class="section-footer-separator">
+        <hr class="section-footer-separator__separator" />
+      </div>
+
+      <div class="section-footer-credits">
+        <strong>Designed and Develped by Cristiano Francesco Finotto</strong>
+        <p>&copy;<span id="date"></span></p>
+      </div>
+    </section>
+
+    <script src="./script/year.js"></script>
   </body>
 </html>

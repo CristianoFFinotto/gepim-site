@@ -1,11 +1,10 @@
 .section-service {
-  height: 100vh;
   background-color: variable.$section-color;
+  height: 100vh;
 
   &__content {
     display: flex;
     flex-wrap: wrap;
-    height: 80%;
 
     .row {
       margin-left: 12px;
@@ -14,6 +13,8 @@
     }
 
     .row:nth-of-type(2) {
+      height: fit-content;
+      margin-top: 25vh;
       .col {
         display: flex;
         justify-content: center;
@@ -28,11 +29,30 @@
       color: variable.$cto;
     }
 
-    &-figcaption-image {
+    figure {
       text-align: center;
+    }
 
-      &-cto {
-        text-align: end;
+    &-image {
+      width: 12vw;
+
+      &-caption {
+        font-size: 1.5vw;
+        color: variable.$text-color-section-service;
+        /*  color: variable.$text-color; */
+        &-cto {
+          text-align: end;
+          font-size: 1vw;
+
+          a {
+            color: variable.$cto;
+            text-decoration: underline;
+          }
+
+          a:hover {
+            color: variable.$text-color-hover;
+          }
+        }
       }
     }
   }

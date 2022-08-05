@@ -17,6 +17,8 @@
 @import "./section/section-title.scss";
 @import "./section/section-portfolio.scss";
 @import "./section/section-service.scss";
+@import "./section/section-partner.scss";
+@import "./section/section-footer.scss";
 @import "./tools/query.scss";
 @import "./tools/scrollbar.scss";
 
@@ -26,4 +28,5 @@ html {
     background-color: variable.$background-color;
     font-family: "itim";
   }
+  scroll-behavior: smooth !important;
 }
