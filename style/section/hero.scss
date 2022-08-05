@@ -15,15 +15,5 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-
-    &-arrow-down {
-      font-size: 2vw;
-      transform: rotate(180deg);
-      text-align: center;
-      padding-bottom: 16vh;
-    }
-    &-arrow-down--hover:hover {
-      color: variable.$text-color-hover;
-    }
   }
 }

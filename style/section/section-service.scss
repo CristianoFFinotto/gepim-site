@@ -1,0 +1,39 @@
+.section-service {
+  height: 100vh;
+  background-color: variable.$section-color;
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    height: 80%;
+
+    .row {
+      margin-left: 12px;
+      margin-right: 12px;
+      width: 100%;
+    }
+
+    .row:nth-of-type(2) {
+      .col {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    &-title {
+      font-size: 4vw;
+      font-style: italic;
+      text-align: center;
+      text-decoration: underline;
+      color: variable.$cto;
+    }
+
+    &-figcaption-image {
+      text-align: center;
+
+      &-cto {
+        text-align: end;
+      }
+    }
+  }
+}

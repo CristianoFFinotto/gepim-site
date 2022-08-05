@@ -1,0 +1,12 @@
+@use "variable";
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  height: 20px;
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: variable.$cto;
+  border-radius: 20px;
+}
