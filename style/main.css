@@ -5746,6 +5746,9 @@ a {
 .section-footer-content .col-6:first-of-type {
   text-align: end;
 }
+.section-footer-content .col-6:nth-of-type(3) .section-footer-content__label {
+  text-align: end;
+}
 .section-footer-content .col-12 {
   text-align: center;
 }
@@ -5755,22 +5758,8 @@ a {
 .section-footer-content__link:hover {
   color: #b1aea5;
 }
-.section-footer-content-tel {
-  display: flex;
-}
 .section-footer-content__label {
   margin: 0;
-}
-.section-footer-content-tel--end {
-  justify-content: end;
-}
-.section-footer-content__tel {
-  border: none;
-  background-color: transparent;
-  color: #cf5c36;
-}
-.section-footer-content__tel:focus {
-  outline: none;
 }
 .section-footer-content-credits {
   font-size: 1vw;
@@ -5791,7 +5780,7 @@ a {
 
 @media (min-width: 1440px) {
   .section-portfolio {
-    padding: 13vh 13vw;
+    padding: 10vh 10vw;
   }
 }
 ::-webkit-scrollbar {

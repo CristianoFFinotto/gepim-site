@@ -14,6 +14,12 @@
         text-align: end;
       }
 
+      &-6:nth-of-type(3) {
+        .section-footer-content__label {
+          text-align: end;
+        }
+      }
+
       &-12 {
         text-align: center;
       }
@@ -27,26 +33,8 @@
       color: variable.$text-color-hover;
     }
 
-    &-tel {
-      display: flex;
-    }
-
     &__label {
       margin: 0;
-    }
-
-    &-tel--end {
-      justify-content: end;
-    }
-
-    &__tel {
-      border: none;
-      background-color: transparent;
-      color: variable.$cto;
-
-      &:focus {
-        outline: none;
-      }
     }
 
     &-credits {
