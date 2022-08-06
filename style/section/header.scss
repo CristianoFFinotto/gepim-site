@@ -1,41 +1,94 @@
 .header {
   padding-top: 6vh;
+  position: absolute;
+  z-index: 1;
+
+  /* mobile - tablet */
+
+  .col-6:nth-of-type(4) {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+  /*** - ***/
+
+  .hamburger {
+    cursor: pointer;
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    transition: all 0.25s;
+  }
+
+  .hamburger__top-bun,
+  .hamburger__bottom-bun {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 15px;
+    width: 18px;
+    height: 2px;
+    background: variable.$cto;
+    transform: rotate(0);
+    transition: all 0.25s;
+  }
+
+  .hamburger:hover [class*="-bun"] {
+    background: variable.$cto;
+  }
+
+  .hamburger__top-bun {
+    top: 23px;
+    transform: translateY(-3px);
+  }
+
+  .hamburger__bottom-bun {
+    bottom: 23px;
+    transform: translateY(3px);
+  }
+
+  .open {
+    transform: rotate(90deg);
+  }
+
+  .open .hamburger__top-bun {
+    transform: rotate(45deg) translateY(0px);
+  }
+
+  .open .hamburger__bottom-bun {
+    transform: rotate(-45deg) translateY(0px);
+  }
 
   &__navbar {
     .navbar__list {
-      display: flex;
       list-style: none;
-      height: 100%;
       padding: 0;
       margin: 0;
-      font-size: 1vw;
+      font-size: 7vw;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: space-around;
+      flex-wrap: wrap;
+      justify-content: center;
+      top: 35vh;
+      width: 94%;
+      left: 3.8vw;
 
-      li:nth-of-type(1) {
-        text-align: center;
+      &-link {
+        color: variable.$text-color;
+        border-bottom: 2px solid variable.$cto;
       }
-
-      /*** CTO ***/
-
-      li:last-of-type {
-        background-color: variable.$cto;
-        border-radius: 10px;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        padding: 20px;
-      }
-
-      li:last-of-type:hover {
-        filter: drop-shadow(5px 5px 10px variable.$background-color);
-      }
-
-      /*** - ***/
 
       &-link:hover {
         color: variable.$text-color-hover;
       }
     }
   }
+}
+
+.header-toggle-event {
+  height: 100vh;
+  background-color: #2c3333;
 }

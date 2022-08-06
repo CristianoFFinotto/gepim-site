@@ -1,3 +1,60 @@
+@media (min-width: 768px) {
+  .header {
+    &__navbar {
+      .navbar__list {
+        font-size: 4vw;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .header {
+    height: auto;
+    background-color: transparent;
+    &__navbar {
+      .navbar__list {
+        height: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        font-size: 1vw;
+        position: initial;
+        width: auto;
+
+        li {
+          text-align: initial;
+        }
+
+        li:nth-of-type(1) {
+          text-align: center;
+        }
+
+        /*** CTO ***/
+
+        li:last-of-type {
+          background-color: variable.$cto;
+          border-radius: 10px;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          padding: 20px;
+        }
+
+        li:last-of-type:hover {
+          filter: drop-shadow(5px 5px 10px variable.$background-color);
+        }
+
+        /*** - ***/
+
+        &-link {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}
+
 @media (min-width: 1440px) {
   .section-portfolio {
     padding: 10vh 10vw;
