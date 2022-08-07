@@ -1,14 +1,16 @@
 .section-title {
   padding-top: 35vh;
+
   &__title {
     text-align: center;
-    font-size: 4vw;
+    font-size: 9vw;
   }
 
   &__sub-title {
     padding-top: 10vh;
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 5.1vw;
+    line-height: 3.5vh;
 
     &--underlined {
       font-style: italic;
@@ -17,7 +19,7 @@
     }
 
     em {
-      font-size: 1vw;
+      font-size: 4vw;
       color: variable.$cto;
     }
   }

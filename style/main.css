@@ -5524,7 +5524,7 @@ a {
 }
 .hero__content {
   position: absolute;
-  width: 100%;
+  width: 103vw;
   height: 100%;
   top: 50%;
   left: 50%;
@@ -5600,8 +5600,8 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   top: 35vh;
-  width: 94%;
-  left: 3.8vw;
+  right: 2vw;
+  left: 4.5vw;
 }
 .header__navbar .navbar__list-link {
   color: #fefbf3;
@@ -5621,12 +5621,13 @@ a {
 }
 .section-title__title {
   text-align: center;
-  font-size: 4vw;
+  font-size: 9vw;
 }
 .section-title__sub-title {
   padding-top: 10vh;
   text-align: center;
-  font-size: 1.5vw;
+  font-size: 5.1vw;
+  line-height: 3.5vh;
 }
 .section-title__sub-title--underlined {
   font-style: italic;
@@ -5634,7 +5635,7 @@ a {
   color: #cf5c36;
 }
 .section-title__sub-title em {
-  font-size: 1vw;
+  font-size: 4vw;
   color: #cf5c36;
 }
 
@@ -5824,9 +5825,48 @@ a {
   width: 30%;
 }
 
+@media (max-device-width: 980px) and (orientation: landscape) {
+  .header .logo {
+    transform: scale(0.5);
+    position: relative;
+    left: -5vw;
+  }
+  .header .hamburger {
+    position: relative;
+    left: -3vw;
+  }
+  .header__navbar .navbar__list {
+    font-size: 3vw;
+  }
+  .section-title {
+    margin-top: 10vh;
+  }
+  .section-title__title {
+    font-size: 4.5vw;
+  }
+  .section-title__sub-title {
+    font-size: 2.5vw;
+    line-height: 8vh;
+  }
+  .section-title em {
+    font-size: 2vw;
+  }
+}
 @media (min-width: 768px) {
   .header__navbar .navbar__list {
     font-size: 4vw;
+  }
+  .section-title {
+    margin-top: 10vh;
+  }
+  .section-title__title {
+    font-size: 5vw;
+  }
+  .section-title__sub-title {
+    font-size: 3.5vw;
+  }
+  .section-title em {
+    font-size: 2.5vw;
   }
 }
 @media (min-width: 992px) {
@@ -5865,6 +5905,15 @@ a {
   .header__navbar .navbar__list-link {
     border-bottom: none;
   }
+  .section-title__title {
+    font-size: 4vw;
+  }
+  .section-title__sub-title {
+    font-size: 1.5vw;
+  }
+  .section-title em {
+    font-size: 1vw;
+  }
 }
 @media (min-width: 1440px) {
   .section-portfolio {
@@ -5889,6 +5938,8 @@ html body {
   color: #fefbf3;
   background-color: #0b0a07;
   font-family: "itim";
+  overflow: overlay;
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -27,6 +27,8 @@ html {
     color: variable.$text-color;
     background-color: variable.$background-color;
     font-family: "itim";
+    overflow: overlay;
+    overflow-x: hidden;
   }
   scroll-behavior: smooth !important;
 }

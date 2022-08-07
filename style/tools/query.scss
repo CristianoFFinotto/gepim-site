@@ -1,9 +1,61 @@
+@media (max-device-width: 980px) and (orientation: landscape) {
+  .header {
+    .logo {
+      transform: scale(0.5);
+      position: relative;
+      left: -5vw;
+    }
+
+    .hamburger {
+      position: relative;
+      left: -3vw;
+    }
+
+    &__navbar {
+      .navbar__list {
+        font-size: 3vw;
+      }
+    }
+  }
+  .section-title {
+    margin-top: 10vh;
+
+    &__title {
+      font-size: 4.5vw;
+    }
+
+    &__sub-title {
+      font-size: 2.5vw;
+      line-height: 8vh;
+    }
+
+    em {
+      font-size: 2vw;
+    }
+  }
+}
+
 @media (min-width: 768px) {
   .header {
     &__navbar {
       .navbar__list {
         font-size: 4vw;
       }
+    }
+  }
+
+  .section-title {
+    margin-top: 10vh;
+    &__title {
+      font-size: 5vw;
+    }
+
+    &__sub-title {
+      font-size: 3.5vw;
+    }
+
+    em {
+      font-size: 2.5vw;
     }
   }
 }
@@ -51,6 +103,20 @@
           border-bottom: none;
         }
       }
+    }
+  }
+
+  .section-title {
+    &__title {
+      font-size: 4vw;
+    }
+
+    &__sub-title {
+      font-size: 1.5vw;
+    }
+
+    em {
+      font-size: 1vw;
     }
   }
 }
