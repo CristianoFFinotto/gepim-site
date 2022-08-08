@@ -1,38 +1,11 @@
 .section-portfolio {
   padding: 0 2vw;
   position: relative;
-  height: 100vh;
-
-  .row {
-    display: flex;
-  }
-  .row:nth-of-type(1) {
-    position: relative;
-    top: 100px;
-    justify-content: end;
-  }
-  .row:nth-of-type(2) {
-    position: relative;
-    top: -100px;
-    justify-content: center;
-  }
-  .row:nth-of-type(3) {
-    position: relative;
-    top: -300px;
-    align-items: end;
-  }
-
-  .row:last-of-type {
-    display: flex;
-    justify-content: end;
-  }
 
   &__title {
-    font-size: 3vw;
-    width: 30%;
-    position: absolute;
-    top: 5vh;
+    font-size: 7vw;
     text-align: center;
+    padding: 10vw;
 
     &--underlined {
       font-style: italic;
@@ -40,8 +13,13 @@
       color: variable.$cto;
       padding-left: 10px;
       padding-right: 10px;
-      font-size: 4vw;
+      font-size: 8vw;
     }
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
   }
 
   &__image {
@@ -49,19 +27,20 @@
   }
 
   &__figcaption-image {
-    font-size: 1vw;
+    font-size: 4vw;
   }
 
   /*** CTO ***/
 
   &__cto {
     height: fit-content;
-    font-size: 2vw;
+    font-size: 4vw;
     background-color: variable.$cto;
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 40px;
     text-align: center;
+    width: fit-content;
 
     &-link:hover {
       color: variable.$text-color-hover;
@@ -69,4 +48,9 @@
   }
 
   /*** - ***/
+
+  .col-11:last-of-type {
+    display: flex;
+    justify-content: end;
+  }
 }

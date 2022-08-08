@@ -1,3 +1,5 @@
+/* mobile landscape */
+
 @media (max-device-width: 980px) and (orientation: landscape) {
   .header {
     .logo {
@@ -33,7 +35,53 @@
       font-size: 2vw;
     }
   }
+
+  .section-portfolio {
+    &__title {
+      font-size: 4vw;
+
+      &--underlined {
+        font-size: 5vw;
+      }
+    }
+    &__cto {
+      font-size: 5vw;
+    }
+
+    .row {
+      margin-top: -100px;
+      transform: scale(0.5);
+    }
+
+    &__figcaption-image {
+      font-size: 4.5vw;
+    }
+  }
 }
+
+/* tablet landscape */
+
+@media (min-device-height: 600px) and (max-device-width: 1200px) and (orientation: landscape) {
+  .section-portfolio {
+    .row {
+      padding-top: 8vh;
+      padding-bottom: 8vh;
+    }
+  }
+}
+
+/* surface pro 7 landscape */
+
+@media (min-device-height: 900px) and (max-device-width: 1400px) and (orientation: landscape) {
+  .section-portfolio {
+    .row {
+      padding-top: 4vh;
+      padding-bottom: 4vh;
+    }
+  }
+}
+
+/* tablet potrait */
 
 @media (min-width: 768px) {
   .header {
@@ -58,7 +106,28 @@
       font-size: 2.5vw;
     }
   }
+
+  .section-portfolio {
+    &__title {
+      font-size: 5vw;
+      padding-left: 18vw;
+      padding-right: 18vw;
+
+      &--underlined {
+        font-size: 6vw;
+      }
+    }
+
+    &__cto {
+      font-size: 3vw;
+    }
+    &__figcaption-image {
+      font-size: 2.5vw;
+    }
+  }
 }
+
+/* PC */
 
 @media (min-width: 992px) {
   .header {
@@ -107,6 +176,7 @@
   }
 
   .section-title {
+    margin-top: 2vh;
     &__title {
       font-size: 4vw;
     }
@@ -119,10 +189,54 @@
       font-size: 1vw;
     }
   }
-}
 
-@media (min-width: 1440px) {
   .section-portfolio {
-    padding: 10vh 10vw;
+    height: 100vh;
+    margin-bottom: 10vh;
+    &__title {
+      font-size: 4vw;
+      width: 30%;
+      padding: 0;
+      position: absolute;
+      top: 5vh;
+
+      &--underlined {
+        font-size: 4vw;
+      }
+    }
+
+    .row:nth-of-type(1) {
+      position: relative;
+      top: 100px;
+      justify-content: end;
+    }
+    .row:nth-of-type(2) {
+      position: relative;
+      top: -100px;
+      justify-content: center;
+    }
+    .row:nth-of-type(3) {
+      position: relative;
+      top: -300px;
+      align-items: end;
+    }
+
+    .row:last-of-type {
+      display: flex;
+      justify-content: end;
+    }
+
+    &__figcaption-image {
+      font-size: 1vw;
+    }
+
+    /*** CTO ***/
+
+    &__cto {
+      font-size: 2vw;
+      width: auto;
+    }
+
+    /*** - ***/
   }
 }
