@@ -21,14 +21,15 @@
 @import "./section/section-footer.scss";
 @import "./tools/query.scss";
 @import "./tools/scrollbar.scss";
+@import "./tools/selection.scss";
 
 html {
   body {
     color: variable.$text-color;
     background-color: variable.$background-color;
     font-family: "itim";
-    overflow: overlay;
-    overflow-x: hidden;
   }
+  overflow-y: overlay;
+  overflow-x: hidden;
   scroll-behavior: smooth !important;
 }

@@ -5524,7 +5524,6 @@ a {
 }
 .hero__content {
   position: absolute;
-  width: 103vw;
   height: 100%;
   top: 50%;
   left: 50%;
@@ -5598,7 +5597,6 @@ a {
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: center;
   top: 35vh;
   right: 2vw;
   left: 4.5vw;
@@ -5690,14 +5688,9 @@ a {
   background-color: #d9d9d9;
   height: 100vh;
 }
-.section-service__content {
-  display: flex;
-  flex-wrap: wrap;
-}
 .section-service__content .row {
   margin-left: 12px;
   margin-right: 12px;
-  width: 100%;
 }
 .section-service__content .row:nth-of-type(2) {
   height: fit-content;
@@ -5718,7 +5711,7 @@ a {
   text-align: center;
 }
 .section-service__content-image {
-  width: 12vw;
+  border-radius: 10px;
 }
 .section-service__content-image-caption {
   font-size: 1.5vw;
@@ -5950,16 +5943,25 @@ a {
   }
   .section-portfolio {
     height: 100vh;
-    margin-bottom: 10vh;
+    margin-bottom: 18vh;
+    position: relative;
+    transform: scale(0.95);
     /*** CTO ***/
     /*** - ***/
+  }
+  .section-portfolio-content {
+    position: absolute;
+    height: fit-content;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .section-portfolio__title {
     font-size: 4vw;
     width: 30%;
     padding: 0;
     position: absolute;
-    top: 5vh;
+    top: 15vh;
   }
   .section-portfolio__title--underlined {
     font-size: 4vw;
@@ -5979,16 +5981,15 @@ a {
     top: -300px;
     align-items: end;
   }
-  .section-portfolio .row:last-of-type {
-    display: flex;
-    justify-content: end;
-  }
   .section-portfolio__figcaption-image {
     font-size: 1vw;
   }
   .section-portfolio__cto {
     font-size: 2vw;
     width: auto;
+    position: relative;
+    height: auto;
+    top: -1.2vw;
   }
 }
 ::-webkit-scrollbar {
@@ -6002,15 +6003,36 @@ a {
   border-radius: 20px;
 }
 
+::-moz-selection {
+  /* Code for Firefox */
+  color: #fefbf3;
+  background: #cf5c36;
+}
+
+::selection {
+  color: #fefbf3;
+  background: #cf5c36;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+             supported by Chrome, Edge, Opera and Firefox */
+}
+
 html {
+  overflow-y: overlay;
+  overflow-x: hidden;
   scroll-behavior: smooth !important;
 }
 html body {
   color: #fefbf3;
   background-color: #0b0a07;
   font-family: "itim";
-  overflow: overlay;
-  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=main.css.map */

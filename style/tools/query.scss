@@ -192,13 +192,23 @@
 
   .section-portfolio {
     height: 100vh;
-    margin-bottom: 10vh;
+    margin-bottom: 18vh;
+    position: relative;
+    transform: scale(0.95);
+    &-content {
+      position: absolute;
+      height: fit-content;
+      top: 75%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
     &__title {
       font-size: 4vw;
       width: 30%;
       padding: 0;
       position: absolute;
-      top: 5vh;
+      top: 15vh;
 
       &--underlined {
         font-size: 4vw;
@@ -221,11 +231,6 @@
       align-items: end;
     }
 
-    .row:last-of-type {
-      display: flex;
-      justify-content: end;
-    }
-
     &__figcaption-image {
       font-size: 1vw;
     }
@@ -235,6 +240,9 @@
     &__cto {
       font-size: 2vw;
       width: auto;
+      position: relative;
+      height: auto;
+      top: -1.2vw;
     }
 
     /*** - ***/

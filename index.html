@@ -21,8 +21,9 @@
               <img
                 src="./img/gepim-logo.svg"
                 alt="gepim logo"
-                class="img-fluid logo"
+                class="img-fluid logo noselect"
                 style="position: relative"
+                loading="lazy"
               />
             </a>
           </div>
@@ -37,7 +38,7 @@
                 <a
                   href="./page/chi-siamo.html"
                   title="link che porta alla pagina chi siamo"
-                  class="navbar__list-link"
+                  class="navbar__list-link noselect"
                   >CHI SIAMO</a
                 >
               </li>
@@ -46,7 +47,7 @@
                 <a
                   href="./page/portfolio.html"
                   title="link che porta alla pagina portfolio"
-                  class="navbar__list-link"
+                  class="navbar__list-link noselect"
                   >PORTFOLIO</a
                 >
               </li>
@@ -55,7 +56,7 @@
                 <a
                   href="./page/servizi.html"
                   title="link che porta alla pagina servizi"
-                  class="navbar__list-link"
+                  class="navbar__list-link noselect"
                   >SERVIZI</a
                 >
               </li>
@@ -64,7 +65,7 @@
                 <a
                   href="#footer"
                   title="link che porta al footer dove ci sono i campi di contatto"
-                  class="navbar__list-link"
+                  class="navbar__list-link noselect"
                   >CONTATTACI</a
                 >
               </li>
@@ -106,80 +107,115 @@
       </div>
 
       <section class="container-fluid section-portfolio">
-        <h2 class="section-portfolio__title">
-          <strong
-            >un percorso di
-            <span class="section-portfolio__title--underlined">SUCCESSI</span>
-          </strong>
-        </h2>
-        <div class="row">
-          <div class="col-11 col-md-7 col-lg-4">
-            <figure>
-              <picture>
-                <img
-                  src="./img/hero.jpg"
-                  alt=""
-                  class="img-fluid section-portfolio__image"
-                />
-              </picture>
-              <figcaption class="section-portfolio__figcaption-image">
-                immagine 1
-              </figcaption>
-            </figure>
+        <div class="container-fluid section-portfolio-content">
+          <h2 class="section-portfolio__title noselect">
+            <strong
+              >un percorso di
+              <span class="section-portfolio__title--underlined">SUCCESSI</span>
+            </strong>
+          </h2>
+          <div class="row">
+            <div class="col-11 col-md-7 col-lg-4">
+              <figure>
+                <picture>
+                  <source
+                    srcset="./img/optimized/supercondominio-torri.avif"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="./img/optimized/supercondominio-torri.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="./img/supercondominio-torri.jpg"
+                    alt="supercondomini TAT"
+                    class="img-fluid section-portfolio__image noselect"
+                    loading="lazy"
+                  />
+                </picture>
+                <figcaption class="section-portfolio__figcaption-image">
+                  Grattacieli Torri TAT, <br />
+                  corso Ivrea 14, Asti (AT)
+                </figcaption>
+              </figure>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-11 col-md-7 col-lg-4">
-            <figure>
-              <picture>
-                <img
-                  src="./img/condominio-commerciale.JPG"
-                  alt=""
-                  class="img-fluid section-portfolio__image"
-                />
-              </picture>
-              <figcaption class="section-portfolio__figcaption-image">
-                immagine 2
-              </figcaption>
-            </figure>
+          <div class="row">
+            <div class="col-11 col-md-7 col-lg-4">
+              <figure>
+                <picture>
+                  <source
+                    srcset="./img/optimized/residenziale-rotonda.avif"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="./img/optimized/residenziale-rotonda.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="./img/residenziale-rotonda.jpg"
+                    alt="condominio residenziale la rotonda"
+                    class="img-fluid section-portfolio__image noselect"
+                    loading="lazy"
+                  />
+                </picture>
+                <figcaption class="section-portfolio__figcaption-image">
+                  Condominio residenziale La Rotonda, <br />
+                  via Giovanni Gerbi 39, Asti (AT)
+                </figcaption>
+              </figure>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-11 col-md-7 col-lg-4">
-            <figure>
-              <picture>
-                <img
-                  src="./img/hero.jpg"
-                  alt=""
-                  class="img-fluid section-portfolio__image"
-                />
-              </picture>
-              <figcaption class="section-portfolio__figcaption-image">
-                immagine 3 sdfsdfsdf <br />
-                immagine 3 sdfsdfsdf <br />
-                immagine 3 sdfsdfsdf <br />
-              </figcaption>
-            </figure>
-          </div>
+          <div class="row">
+            <div class="col-11 col-md-7 col-lg-4">
+              <figure>
+                <picture>
+                  <source
+                    srcset="./img/optimized/residenziale-fortino.avif"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="./img/optimized/residenziale-fortino.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="./img/residenziale-fortino.jpg"
+                    alt="condominio residenziale"
+                    class="img-fluid section-portfolio__image noselect"
+                    loading="lazy"
+                  />
+                </picture>
+                <figcaption class="section-portfolio__figcaption-image">
+                  Condominio residenziale GERRY <br />
+                  via Eo Bausano , Asti (AT)
+                </figcaption>
+              </figure>
+            </div>
 
-          <div class="d-none d-lg-block col-6"></div>
+            <div class="d-none d-lg-block col-6"></div>
 
-          <div class="col-11 col-md-12 col-lg-2">
-            <div class="section-portfolio__cto">
-              <a
-                href="./page/portfolio.html"
-                title="link che porta alla pagina portfolio"
-                class="col-2 section-portfolio__cto-link"
-                >PORFOLIO</a
-              >
+            <div class="col-11 col-md-12 col-lg-2">
+              <div class="section-portfolio__cto">
+                <a
+                  href="./page/portfolio.html"
+                  title="link che porta alla pagina portfolio"
+                  class="col-2 section-portfolio__cto-link noselect"
+                  >PORFOLIO</a
+                >
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <section class="section-service">
-        <img src="./img/wave-top.svg" alt="separatore a onda" />
-        <div class="section-service__content">
+        <img
+          src="./img/wave-top.svg"
+          alt="separatore a onda"
+          class="noselect"
+          loading="lazy"
+        />
+        <div class="container section-service__content">
           <div class="row">
             <div class="col">
               <h2 class="section-service__content-title">
@@ -189,13 +225,22 @@
           </div>
 
           <div class="row">
-            <div class="col">
+            <div class="col-11 col-md-7 col-lg">
               <figure>
                 <picture>
+                  <source
+                    srcset="./img/optimized/intervento.avif"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="./img/optimized/intervento.webp"
+                    type="image/webp"
+                  />
                   <img
-                    src="./img/home_FILL0_wght400_GRAD0_opsz48.svg"
-                    alt=""
-                    class="img-fluid section-service__content-image"
+                    src="./img/intervento.jpg"
+                    alt="immagine uomo d'affari"
+                    class="img-fluid section-service__content-image noselect"
+                    loading="lazy"
                   />
                 </picture>
                 <figcaption>
@@ -203,23 +248,38 @@
                     PRONTO INTERVENTO
                   </p>
                   <p class="section-service__content-image-caption-cto">
-                    <a href="">scopri di più</a>
+                    <a
+                      href=""
+                      title="link che porta alla pagina servizi alla sezione pronto intervento"
+                      >scopri di più</a
+                    >
                     <img
                       src="./img/arrow_forward.svg"
                       alt="freccia avanti"
                       width="20"
+                      class="noselect"
+                      loading="lazy"
                     />
                   </p>
                 </figcaption>
               </figure>
             </div>
-            <div class="col">
+            <div class="col-11 col-md-7 col-lg">
               <figure>
                 <picture>
+                  <source
+                    srcset="./img/optimized/consulenza.avif"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="./img/optimized/consulenza.webp"
+                    type="image/webp"
+                  />
                   <img
-                    src="./img/home_FILL0_wght400_GRAD0_opsz48.svg"
-                    alt=""
-                    class="img-fluid section-service__content-image"
+                    src="./img/consulenza.jpg"
+                    alt="tavolo per assemblee e consulenze"
+                    class="img-fluid section-service__content-image noselect"
+                    loading="lazy"
                   />
                 </picture>
                 <figcaption>
@@ -227,23 +287,38 @@
                     CONSULENZA
                   </p>
                   <p class="section-service__content-image-caption-cto">
-                    <a href="">scopri di più</a>
+                    <a
+                      href=""
+                      title="link che porta alla pagina servizi alla sezione consulenza"
+                      >scopri di più</a
+                    >
                     <img
                       src="./img/arrow_forward.svg"
                       alt="freccia avanti"
                       width="20"
+                      class="noselect"
+                      loading="lazy"
                     />
                   </p>
                 </figcaption>
               </figure>
             </div>
-            <div class="col">
+            <div class="col-11 col-md-7 col-lg">
               <figure>
                 <picture>
+                  <source
+                    srcset="./img/optimized/telefono.avif"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="./img/optimized/telefono.webp"
+                    type="image/webp"
+                  />
                   <img
-                    src="./img/home_FILL0_wght400_GRAD0_opsz48.svg"
-                    alt=""
-                    class="img-fluid section-service__content-image"
+                    src="./img/telefono.jpg"
+                    alt="telefono sulla scrivania"
+                    class="img-fluid section-service__content-image noselect"
+                    loading="lazy"
                   />
                 </picture>
                 <figcaption>
@@ -251,11 +326,17 @@
                     ASSISTENZA TELEFONICA
                   </p>
                   <p class="section-service__content-image-caption-cto">
-                    <a href="">scopri di più</a>
+                    <a
+                      href=""
+                      title="link che porta alla pagina servizi alla sezione assistenza telefonica"
+                      >scopri di più</a
+                    >
                     <img
                       src="./img/arrow_forward.svg"
                       alt="freccia avanti"
                       width="20"
+                      class="noselect"
+                      loading="lazy"
                     />
                   </p>
                 </figcaption>
@@ -266,7 +347,7 @@
       </section>
 
       <section class="container-fluid section-partner">
-        <h2 class="container-fluid section-partner__title">
+        <h2 class="container-fluid section-partner__title noselect">
           <strong>I NOSTRI PARTNERS</strong>
         </h2>
 
@@ -285,43 +366,56 @@
         </div>
       </section>
 
-      <img src="./img/waves-bottom.svg" alt="separatore a onda" />
+      <img
+        src="./img/waves-bottom.svg"
+        alt="separatore a onda"
+        class="noselect"
+        loading="lazy"
+      />
 
-      <section class="container-fluid section-footer" id="footer">
+      <footer class="container-fluid section-footer" id="footer">
         <address>
           <div class="row section-footer-content">
             <div class="col-6">
-              <p class="section-footer-content__label">
+              <p class="section-footer-content__label noselect">
                 Email:
                 <a
                   href="mailto:info@gepim-sas.it"
                   class="section-footer-content__link"
+                  title="link che permette di inviare una mail a info@gepim-sas.it"
                   >info@gepim-sas.it</a
                 >
               </p>
             </div>
             <div class="col-6">
-              <p class="section-footer-content__label">
+              <p class="section-footer-content__label noselect">
                 PEC:
                 <a
                   href="mailto:gepim.sas@cert.cna.it"
                   class="section-footer-content__link"
+                  title="link che permette di inviare una mail a gepim.sas@cert.cna.it"
                   >gepim.sas@cert.cna.it</a
                 >
               </p>
             </div>
             <div class="col-6">
-              <p class="section-footer-content__label">
+              <p class="section-footer-content__label noselect">
                 Tel:
-                <a href="tel:0141321984" class="section-footer-content__link"
+                <a
+                  href="tel:0141321984"
+                  class="section-footer-content__link"
+                  title="link che permette di chiamare 0141321984"
                   >0141321984</a
                 >
               </p>
             </div>
             <div class="col-6">
-              <p class="section-footer-content__label">
+              <p class="section-footer-content__label noselect">
                 Mobile:
-                <a href="tel:3479552009" class="section-footer-content__link"
+                <a
+                  href="tel:3479552009"
+                  class="section-footer-content__link"
+                  title="link che permette di chiamare 3479552009"
                   >3479552009</a
                 >
               </p>
@@ -332,7 +426,8 @@
             <div class="col-12">
               <a
                 href="https://goo.gl/maps/PW3rjT3sfEyz12Ld6"
-                class="section-footer-content__link"
+                class="section-footer-content__link noselect"
+                title="link che ti permette di trovare l'indirizzo su maps"
                 >GEPIM di Finotto geom. Claudio & C. s.a.s. - Via Manzoni N°
                 12/B – 14100 Asti (AT)</a
               >
@@ -343,11 +438,11 @@
           <hr class="section-footer-content-separator__separator" />
         </div>
 
-        <div class="section-footer-content-credits">
+        <div class="section-footer-content-credits noselect">
           <strong>Designed and Developed by Cristiano Francesco Finotto</strong>
           <p>&copy;<span id="date"></span></p>
         </div>
-      </section>
+      </footer>
     </div>
 
     <script src="./script/hamburger-menu.js"></script>
