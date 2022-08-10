@@ -23,11 +23,11 @@
     margin-top: 10vh;
 
     &__title {
-      font-size: 4.5vw;
+      font-size: 5vw;
     }
 
     &__sub-title {
-      font-size: 2.5vw;
+      font-size: 3vw;
       line-height: 8vh;
     }
 
@@ -71,6 +71,20 @@
           }
         }
       }
+    }
+  }
+
+  .section-partner {
+    padding-top: 30vh;
+    &__title {
+      font-size: 6vw;
+    }
+    &__logo {
+      transform: scale(0.8);
+    }
+
+    .row {
+      margin-top: 20vh;
     }
   }
 
@@ -364,6 +378,20 @@
           }
         }
       }
+    }
+  }
+
+  .section-partner {
+    padding-top: 20vh;
+    &__title {
+      font-size: 4.5vw;
+    }
+    &__logo {
+      transform: scale(0.7);
+    }
+
+    .row {
+      margin-top: 20vh;
     }
   }
 
