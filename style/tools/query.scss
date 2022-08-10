@@ -45,7 +45,7 @@
       }
     }
     &__cto {
-      font-size: 5vw;
+      font-size: 2.5vw;
       margin-top: 20vh;
     }
 
@@ -54,7 +54,23 @@
     }
 
     &__figcaption-image {
-      font-size: 4.5vw;
+      font-size: 2vw;
+    }
+  }
+
+  .section-service {
+    &__content {
+      &-title {
+        font-size: 5.5vw;
+      }
+      &-image {
+        &-caption {
+          font-size: 2.5vw;
+          &-cto {
+            font-size: 2.5vw;
+          }
+        }
+      }
     }
   }
 
@@ -177,6 +193,23 @@
     }
     &__figcaption-image {
       font-size: 2.5vw;
+    }
+  }
+
+  .section-service {
+    &__content {
+      &-title {
+        font-size: 6.5vw;
+      }
+
+      &-image {
+        &-caption {
+          font-size: 2.5vw;
+          &-cto {
+            font-size: 2.5vw;
+          }
+        }
+      }
     }
   }
 
@@ -320,6 +353,8 @@
 
       &-title {
         font-size: 4vw;
+        margin-top: 15vh;
+        margin-bottom: 15vh;
       }
       &-image {
         &-caption {

@@ -14,7 +14,7 @@
     }
 
     &-title {
-      font-size: 8vw;
+      font-size: 9vw;
       font-style: italic;
       text-align: center;
       text-decoration: underline;
@@ -30,12 +30,12 @@
       border-radius: 10px;
 
       &-caption {
-        font-size: 3.5vw;
+        font-size: 4.5vw;
         color: variable.$text-color-section-service;
         /*  color: variable.$text-color; */
         &-cto {
           text-align: end;
-          font-size: 3vw;
+          font-size: 4vw;
 
           a {
             color: variable.$cto;
