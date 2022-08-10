@@ -5675,6 +5675,7 @@ a {
   margin-bottom: 40px;
   text-align: center;
   width: fit-content;
+  margin-top: 5vh;
 }
 .section-portfolio__cto-link:hover {
   color: #b1aea5;
@@ -5686,41 +5687,39 @@ a {
 
 .section-service {
   background-color: #d9d9d9;
-  height: 100vh;
-}
-.section-service__content .row {
-  margin-left: 12px;
-  margin-right: 12px;
 }
 .section-service__content .row:nth-of-type(2) {
   height: fit-content;
-  margin-top: 25vh;
+  margin-top: 10vh;
+  display: flex;
+  justify-content: center;
 }
 .section-service__content .row:nth-of-type(2) .col {
   display: flex;
   justify-content: center;
 }
 .section-service__content-title {
-  font-size: 4vw;
+  font-size: 8vw;
   font-style: italic;
   text-align: center;
   text-decoration: underline;
   color: #cf5c36;
+  margin-top: 8vh;
 }
 .section-service__content figure {
-  text-align: center;
+  text-align: start;
 }
 .section-service__content-image {
   border-radius: 10px;
 }
 .section-service__content-image-caption {
-  font-size: 1.5vw;
+  font-size: 3.5vw;
   color: #646461;
   /*  color: variable.$text-color; */
 }
 .section-service__content-image-caption-cto {
   text-align: end;
-  font-size: 1vw;
+  font-size: 3vw;
 }
 .section-service__content-image-caption-cto a {
   color: #cf5c36;
@@ -5758,7 +5757,7 @@ a {
 }
 
 .section-footer {
-  font-size: 1vw;
+  font-size: 3vw;
 }
 .section-footer-content {
   display: flex;
@@ -5786,7 +5785,7 @@ a {
   margin: 0;
 }
 .section-footer-content-credits {
-  font-size: 1vw;
+  font-size: 3vw;
   text-align: center;
   opacity: 0.5;
   padding-bottom: 2vh;
@@ -5837,13 +5836,19 @@ a {
   }
   .section-portfolio__cto {
     font-size: 5vw;
+    margin-top: 20vh;
   }
   .section-portfolio .row {
-    margin-top: -100px;
-    transform: scale(0.5);
+    margin-top: 10vh;
   }
   .section-portfolio__figcaption-image {
     font-size: 4.5vw;
+  }
+  .section-footer {
+    font-size: 2vw;
+  }
+  .section-footer-content-credits {
+    font-size: 2vw;
   }
 }
 /* tablet landscape */
@@ -5852,12 +5857,39 @@ a {
     padding-top: 8vh;
     padding-bottom: 8vh;
   }
+  .section-portfolio__figcaption-image {
+    font-size: 1.5vw !important;
+  }
+  .section-service__content-title {
+    font-size: 4vw;
+  }
+  .section-service__content-image-caption {
+    font-size: 2vw !important;
+  }
+  .section-service__content-image-caption-cto {
+    font-size: 2vw !important;
+  }
+  .section-footer {
+    font-size: 1.5vw !important;
+  }
+  .section-footer-content-credits {
+    font-size: 1.5vw !important;
+  }
 }
 /* surface pro 7 landscape */
 @media (min-device-height: 900px) and (max-device-width: 1400px) and (orientation: landscape) {
   .section-portfolio .row {
     padding-top: 4vh;
     padding-bottom: 4vh;
+  }
+  .section-service__content-title {
+    font-size: 5vw;
+  }
+  .section-service__content-image-caption {
+    font-size: 2vw;
+  }
+  .section-service__content-image-caption-cto {
+    font-size: 2vw;
   }
 }
 /* tablet potrait */
@@ -5890,6 +5922,12 @@ a {
   }
   .section-portfolio__figcaption-image {
     font-size: 2.5vw;
+  }
+  .section-footer {
+    font-size: 2vw;
+  }
+  .section-footer-content-credits {
+    font-size: 2vw;
   }
 }
 /* PC */
@@ -5944,17 +5982,14 @@ a {
   .section-portfolio {
     height: 100vh;
     margin-bottom: 18vh;
-    position: relative;
     transform: scale(0.95);
+    display: flex;
+    align-items: center;
     /*** CTO ***/
     /*** - ***/
   }
   .section-portfolio-content {
-    position: absolute;
-    height: fit-content;
-    top: 75%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    height: 100%;
   }
   .section-portfolio__title {
     font-size: 4vw;
@@ -5987,9 +6022,33 @@ a {
   .section-portfolio__cto {
     font-size: 2vw;
     width: auto;
-    position: relative;
     height: auto;
-    top: -1.2vw;
+  }
+  .section-service {
+    position: relative;
+    height: 100vh;
+  }
+  .section-service__content {
+    position: absolute;
+    height: fit-content;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .section-service__content-title {
+    font-size: 4vw;
+  }
+  .section-service__content-image-caption {
+    font-size: 1.5vw;
+  }
+  .section-service__content-image-caption-cto {
+    font-size: 1.2vw;
+  }
+  .section-footer {
+    font-size: 1vw;
+  }
+  .section-footer-content-credits {
+    font-size: 1vw;
   }
 }
 ::-webkit-scrollbar {

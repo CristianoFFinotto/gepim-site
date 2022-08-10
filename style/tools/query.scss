@@ -46,15 +46,25 @@
     }
     &__cto {
       font-size: 5vw;
+      margin-top: 20vh;
     }
 
     .row {
-      margin-top: -100px;
-      transform: scale(0.5);
+      margin-top: 10vh;
     }
 
     &__figcaption-image {
       font-size: 4.5vw;
+    }
+  }
+
+  .section-footer {
+    font-size: 2vw;
+
+    &-content {
+      &-credits {
+        font-size: 2vw;
+      }
     }
   }
 }
@@ -67,6 +77,34 @@
       padding-top: 8vh;
       padding-bottom: 8vh;
     }
+    &__figcaption-image {
+      font-size: 1.5vw !important;
+    }
+  }
+  .section-service {
+    &__content {
+      &-title {
+        font-size: 4vw;
+      }
+      &-image {
+        &-caption {
+          font-size: 2vw !important;
+          &-cto {
+            font-size: 2vw !important;
+          }
+        }
+      }
+    }
+  }
+
+  .section-footer {
+    font-size: 1.5vw !important;
+
+    &-content {
+      &-credits {
+        font-size: 1.5vw !important;
+      }
+    }
   }
 }
 
@@ -77,6 +115,22 @@
     .row {
       padding-top: 4vh;
       padding-bottom: 4vh;
+    }
+  }
+
+  .section-service {
+    &__content {
+      &-title {
+        font-size: 5vw;
+      }
+      &-image {
+        &-caption {
+          font-size: 2vw;
+          &-cto {
+            font-size: 2vw;
+          }
+        }
+      }
     }
   }
 }
@@ -123,6 +177,16 @@
     }
     &__figcaption-image {
       font-size: 2.5vw;
+    }
+  }
+
+  .section-footer {
+    font-size: 2vw;
+
+    &-content {
+      &-credits {
+        font-size: 2vw;
+      }
     }
   }
 }
@@ -193,14 +257,11 @@
   .section-portfolio {
     height: 100vh;
     margin-bottom: 18vh;
-    position: relative;
     transform: scale(0.95);
+    display: flex;
+    align-items: center;
     &-content {
-      position: absolute;
-      height: fit-content;
-      top: 75%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      height: 100%;
     }
 
     &__title {
@@ -240,11 +301,44 @@
     &__cto {
       font-size: 2vw;
       width: auto;
-      position: relative;
       height: auto;
-      top: -1.2vw;
     }
 
     /*** - ***/
+  }
+
+  .section-service {
+    position: relative;
+    height: 100vh;
+
+    &__content {
+      position: absolute;
+      height: fit-content;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      &-title {
+        font-size: 4vw;
+      }
+      &-image {
+        &-caption {
+          font-size: 1.5vw;
+          &-cto {
+            font-size: 1.2vw;
+          }
+        }
+      }
+    }
+  }
+
+  .section-footer {
+    font-size: 1vw;
+
+    &-content {
+      &-credits {
+        font-size: 1vw;
+      }
+    }
   }
 }
