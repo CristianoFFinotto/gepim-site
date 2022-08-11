@@ -1,3 +1,18 @@
 .section-maps {
-  background-color: variable.$section-color;
+  background-color: variable.$header-expand-mobile-tablet;
+  padding-top: 5vh;
+
+  &-content {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+
+    &__map {
+      border-radius: 10px;
+      height: 480px;
+      width: 100%;
+      &-row {
+        margin-top: 10vh;
+      }
+    }
+  }
 }

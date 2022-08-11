@@ -10,12 +10,9 @@
     />
     <link rel="icon" type="image/x-icon" href="../img/gepim-logo-icon_.ico" />
     <link rel="stylesheet" href="../style/main.css" />
-    <script async
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwqsaE2LffJE46yCYRWPU2sNL3DEfh_CM">
-</script>
   </head>
   <body>
-    <header class="container-fluid header position-relative">
+    <header class="container-fluid header">
       <nav class="header__navbar">
         <div class="row">
           <div class="d-none d-lg-block col-1"></div>
@@ -79,96 +76,107 @@
       </nav>
     </header>
 
-    <div class="container-fluid section-maps" style="height: 100vh; margin-top: 200px;">
-
-        <div class="row">
+    <div id="content" class="d-lg-block">
+      <div class="container-fluid section-maps">
+        <div class="container section-maps-content">
+          <div class="row section-maps-content__map-row">
             <div class="col">
-                <iframe
-class="img-fluid"
-  loading="lazy"
-  allowfullscreen
-  width="50%"
-  referrerpolicy="no-referrer-when-downgrade"
-  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCwqsaE2LffJE46yCYRWPU2sNL3DEfh_CM
-    &q=Space+Needle,Seattle+WA">
-</iframe>
-            </div>
-        </div>
-
-        
-    </div>
-
-      <footer class="container-fluid section-footer" id="footer">
-        <address>
-          <div class="row section-footer-content">
-            <div class="col-6">
-              <p class="section-footer-content__label noselect">
-                Email:
-                <a
-                  href="mailto:info@gepim-sas.it"
-                  class="section-footer-content__link"
-                  title="link che permette di inviare una mail a info@gepim-sas.it"
-                  >info@gepim-sas.it</a
-                >
-              </p>
-            </div>
-            <div class="col-6">
-              <p class="section-footer-content__label noselect">
-                PEC:
-                <a
-                  href="mailto:gepim.sas@cert.cna.it"
-                  class="section-footer-content__link"
-                  title="link che permette di inviare una mail a gepim.sas@cert.cna.it"
-                  >gepim.sas@cert.cna.it</a
-                >
-              </p>
-            </div>
-            <div class="col-6">
-              <p class="section-footer-content__label noselect">
-                Tel:
-                <a
-                  href="tel:0141321984"
-                  class="section-footer-content__link"
-                  title="link che permette di chiamare 0141321984"
-                  >0141321984</a
-                >
-              </p>
-            </div>
-            <div class="col-6">
-              <p class="section-footer-content__label noselect">
-                Mobile:
-                <a
-                  href="tel:3479552009"
-                  class="section-footer-content__link"
-                  title="link che permette di chiamare 3479552009"
-                  >3479552009</a
-                >
-              </p>
-            </div>
-            <div class="col-12">
-              <em> P.IVA: 01459940050 </em>
-            </div>
-            <div class="col-12">
-              <a
-                href="https://goo.gl/maps/PW3rjT3sfEyz12Ld6"
-                class="section-footer-content__link noselect"
-                title="link che ti permette di trovare l'indirizzo su maps"
-                >GEPIM di Finotto geom. Claudio & C. s.a.s. - Via Manzoni N°
-                12/B – 14100 Asti (AT)</a
-              >
+              <iframe
+                src="https://www.google.com/maps/d/embed?mid=1tKZH_xiPxBMwefTEzDTJOfQLVUYRelU&ehbc=2E312F"
+                class="section-maps-content__map"
+              ></iframe>
             </div>
           </div>
-        </address>
-        <div class="section-footer-content-separator">
-          <hr class="section-footer-content-separator__separator" />
+          <div class="row section-maps-content__map-row">
+            <div class="col">
+              <iframe
+                src="https://www.google.com/maps/d/embed?mid=1ZsOyGjt2naltkZ1IfFUSNReyrO8rDBg&ehbc=2E312F"
+                class="section-maps-content__map"
+              ></iframe>
+            </div>
+          </div>
+          <div class="row section-maps-content__map-row">
+            <div class="col">
+              <iframe
+                src="https://www.google.com/maps/d/embed?mid=1TRzbH1VMUjfnre3u2UN2rwHEuqlM9RI&ehbc=2E312F"
+                class="section-maps-content__map"
+              ></iframe>
+            </div>
+          </div>
         </div>
-
-        <div class="section-footer-content-credits noselect">
-          <strong>Designed and Developed by Cristiano Francesco Finotto</strong>
-          <p>&copy;<span id="date"></span></p>
-        </div>
-      </footer>
+      </div>
     </div>
+
+    <footer class="container-fluid section-footer" id="footer">
+      <address>
+        <div class="row section-footer-content">
+          <div class="col-6">
+            <p class="section-footer-content__label noselect">
+              Email:
+              <a
+                href="mailto:info@gepim-sas.it"
+                class="section-footer-content__link"
+                title="link che permette di inviare una mail a info@gepim-sas.it"
+                >info@gepim-sas.it</a
+              >
+            </p>
+          </div>
+          <div class="col-6">
+            <p class="section-footer-content__label noselect">
+              PEC:
+              <a
+                href="mailto:gepim.sas@cert.cna.it"
+                class="section-footer-content__link"
+                title="link che permette di inviare una mail a gepim.sas@cert.cna.it"
+                >gepim.sas@cert.cna.it</a
+              >
+            </p>
+          </div>
+          <div class="col-6">
+            <p class="section-footer-content__label noselect">
+              Tel:
+              <a
+                href="tel:0141321984"
+                class="section-footer-content__link"
+                title="link che permette di chiamare 0141321984"
+                >0141321984</a
+              >
+            </p>
+          </div>
+          <div class="col-6">
+            <p class="section-footer-content__label noselect">
+              Mobile:
+              <a
+                href="tel:3479552009"
+                class="section-footer-content__link"
+                title="link che permette di chiamare 3479552009"
+                >3479552009</a
+              >
+            </p>
+          </div>
+          <div class="col-12">
+            <em> P.IVA: 01459940050 </em>
+          </div>
+          <div class="col-12">
+            <a
+              href="https://goo.gl/maps/PW3rjT3sfEyz12Ld6"
+              class="section-footer-content__link noselect"
+              title="link che ti permette di trovare l'indirizzo su maps"
+              >GEPIM di Finotto geom. Claudio & C. s.a.s. - Via Manzoni N° 12/B
+              – 14100 Asti (AT)</a
+            >
+          </div>
+        </div>
+      </address>
+      <div class="section-footer-content-separator">
+        <hr class="section-footer-content-separator__separator" />
+      </div>
+
+      <div class="section-footer-content-credits noselect">
+        <strong>Designed and Developed by Cristiano Francesco Finotto</strong>
+        <p>&copy;<span id="date"></span></p>
+      </div>
+    </footer>
 
     <script src="../script/hamburger-menu.js"></script>
     <script src="../script/year.js"></script>
