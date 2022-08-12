@@ -1,0 +1,34 @@
+.section-intro {
+  height: 100vh;
+  background-color: variable.$section-color;
+  position: relative;
+
+  &__text {
+    color: variable.$text-color-section-intro;
+    font-size: 2vw;
+    text-align: justify;
+    padding: 3vh 0;
+
+    &-cto {
+      border-bottom: 2px solid variable.$cto;
+
+      &:hover + .section-intro__text-image {
+        display: block;
+      }
+    }
+  }
+
+  &__image-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+  }
+  &__image {
+    display: none;
+    width: 50%;
+    height: 50%;
+  }
+}
