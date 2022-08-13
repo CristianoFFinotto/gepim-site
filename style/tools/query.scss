@@ -36,6 +36,17 @@
     }
   }
 
+  .section-intro {
+    &__text {
+      font-size: 3.5vw;
+    }
+
+    &__image {
+      width: 70%;
+      height: 40%;
+    }
+  }
+
   .section-portfolio {
     &__title {
       font-size: 4vw;
@@ -106,6 +117,16 @@
 /* tablet landscape */
 
 @media (min-device-height: 600px) and (max-device-width: 1200px) and (orientation: landscape) {
+  .section-intro {
+    &__text {
+      font-size: 3.5vw;
+    }
+
+    &__image {
+      width: 45% !important;
+      height: 80% !important;
+    }
+  }
   .section-portfolio {
     .row {
       padding-top: 8vh;
@@ -145,6 +166,17 @@
 /* surface pro 7 landscape */
 
 @media (min-device-height: 900px) and (max-device-width: 1400px) and (orientation: landscape) {
+  .section-intro {
+    &__text {
+      font-size: 3.5vw;
+    }
+
+    &__image {
+      width: 45% !important;
+      height: 80% !important;
+    }
+  }
+
   .section-portfolio {
     .row {
       padding-top: 4vh;
@@ -305,6 +337,18 @@
     }
   }
 
+  .section-intro {
+    &__text {
+      font-size: 2vw;
+      text-align: justify;
+    }
+
+    &__image {
+      width: 40%;
+      height: 70%;
+    }
+  }
+
   .section-portfolio {
     height: 100vh;
     margin-bottom: 18vh;
@@ -320,7 +364,7 @@
       width: 30%;
       padding: 0;
       position: absolute;
-      top: 15vh;
+      top: 10vh;
 
       &--underlined {
         font-size: 4vw;
@@ -360,7 +404,6 @@
 
   .section-service {
     position: relative;
-    height: 100vh;
 
     &__content {
       position: absolute;
