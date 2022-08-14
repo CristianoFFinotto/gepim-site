@@ -13,7 +13,7 @@
   </head>
   <body>
     <header class="container-fluid header">
-      <nav class="header__navbar">
+      <nav class="header__navbar" role="navigation">
         <div class="row">
           <div class="d-none d-lg-block col-1"></div>
           <div class="col-7 col-md-5 col-lg-2">
@@ -38,26 +38,49 @@
                 <span class="hamburger-inner"></span>
               </span>
             </button>
-            <ul
-              class="d-none d-lg-flex justify-content-end navbar__list"
-              id="navigation"
-            >
-              <li class="px-5">
+            <ul class="d-none d-lg-flex navbar__list" id="navigation">
+              <li>
                 <a
-                  href="/"
+                  href="/#chi-siamo"
                   title="link che porta alla pagina chi siamo"
                   class="navbar__list-link noselect"
-                  >HOME</a
+                  >CHI SIAMO</a
                 >
               </li>
 
-              <li class="px-5">
+              <li>
                 <a
-                  id="contattaci"
+                  href="/page/portfolio.html"
+                  title="link che porta alla pagina portfolio"
+                  class="navbar__list-link noselect"
+                  >PORTFOLIO</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="/#servizi"
+                  title="link che porta alla pagina servizi"
+                  class="navbar__list-link noselect"
+                  >SERVIZI</a
+                >
+              </li>
+
+              <li>
+                <a
                   href="#footer"
                   title="link che porta al footer dove ci sono i campi di contatto"
                   class="navbar__list-link noselect"
                   >CONTATTACI</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.miocondominio.eu/"
+                  title="link che porta all'area riservata del condomino"
+                  class="navbar__list-link noselect"
+                  target="_blank"
+                  >AREA RISERVATA</a
                 >
               </li>
             </ul>
