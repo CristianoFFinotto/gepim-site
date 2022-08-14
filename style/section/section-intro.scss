@@ -20,22 +20,6 @@
     }
   }
 
-  .section-intro__cto-info {
-    text-align: end;
-    font-size: 5vw;
-    display: block;
-    margin-top: 5vh;
-
-    a {
-      color: variable.$cto;
-      text-decoration: underline;
-    }
-
-    a:hover {
-      color: variable.$text-color-hover;
-    }
-  }
-
   &__image-container {
     position: absolute;
     top: 50%;

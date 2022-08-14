@@ -16,52 +16,44 @@
       <nav class="header__navbar">
         <div class="row">
           <div class="d-none d-lg-block col-1"></div>
-          <div class="col-6 col-md-4 col-lg-2">
+          <div class="col-7 col-md-5 col-lg-2">
             <a href="/" title="link che porta alla pagina home">
               <img
-                src="../img/logo/gepim-logo.svg"
+                src="../img/logo/gepim-logo.webp"
                 alt="gepim logo scritta"
-                class="img-fluid noselect"
+                class="img-fluid logo noselect"
                 loading="lazy"
               />
             </a>
           </div>
           <div class="d-none d-lg-block col-3"></div>
-          <div class="col-6 col-md col-lg-5 d-lg-block">
-            <div class="hamburger d-lg-none">
-              <span class="hamburger__top-bun"></span>
-              <span class="hamburger__bottom-bun"></span>
-            </div>
-            <ul class="d-none d-lg-flex navbar__list">
-              <li>
+          <div class="col-5 col-md-7 col-lg-5 d-lg-block">
+            <button
+              class="hamburger hamburger--squeeze d-lg-none"
+              type="button"
+              aria-label="Menu"
+              aria-controls="navigation"
+            >
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+            <ul
+              class="d-none d-lg-flex justify-content-end navbar__list"
+              id="navigation"
+            >
+              <li class="px-5">
                 <a
-                  href="./chi-siamo.html"
+                  href="/"
                   title="link che porta alla pagina chi siamo"
                   class="navbar__list-link noselect"
-                  >CHI SIAMO</a
+                  >HOME</a
                 >
               </li>
 
-              <li>
+              <li class="px-5">
                 <a
-                  href="./portfolio.html"
-                  title="link che porta alla pagina portfolio"
-                  class="navbar__list-link noselect"
-                  >PORTFOLIO</a
-                >
-              </li>
-
-              <li>
-                <a
-                  href="./servizi.html"
-                  title="link che porta alla pagina servizi"
-                  class="navbar__list-link noselect"
-                  >SERVIZI</a
-                >
-              </li>
-
-              <li>
-                <a
+                  id="contattaci"
                   href="#footer"
                   title="link che porta al footer dove ci sono i campi di contatto"
                   class="navbar__list-link noselect"
@@ -106,7 +98,7 @@
       </div>
     </div>
 
-    <footer class="container-fluid section-footer" id="footer">
+    <footer class="container-fluid section-footer position-static" id="footer">
       <address>
         <div class="row section-footer-content">
           <div class="col-6">

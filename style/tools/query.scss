@@ -3,14 +3,9 @@
 @media (max-device-width: 980px) and (orientation: landscape) {
   .header {
     .logo {
-      transform: scale(0.5);
+      transform: scale(0.7);
       position: relative;
       left: -5vw;
-    }
-
-    .hamburger {
-      position: relative;
-      left: -3vw;
     }
 
     &__navbar {
@@ -77,9 +72,6 @@
       &-image {
         &-caption {
           font-size: 2.5vw;
-          &-cto {
-            font-size: 2.5vw;
-          }
         }
       }
     }
@@ -144,9 +136,6 @@
       &-image {
         &-caption {
           font-size: 2vw !important;
-          &-cto {
-            font-size: 2vw !important;
-          }
         }
       }
     }
@@ -192,9 +181,6 @@
       &-image {
         &-caption {
           font-size: 2vw;
-          &-cto {
-            font-size: 2vw;
-          }
         }
       }
     }
@@ -236,10 +222,6 @@
       width: 70%;
       height: 50%;
     }
-
-    .section-intro__cto-info {
-      font-size: 3vw;
-    }
   }
 
   .section-portfolio {
@@ -270,9 +252,6 @@
       &-image {
         &-caption {
           font-size: 2.5vw;
-          &-cto {
-            font-size: 2.5vw;
-          }
         }
       }
     }
@@ -362,10 +341,6 @@
       width: 40%;
       height: 70%;
     }
-
-    .section-intro__cto-info {
-      font-size: 1.5vw;
-    }
   }
 
   .section-portfolio {
@@ -439,9 +414,6 @@
       &-image {
         &-caption {
           font-size: 1.5vw;
-          &-cto {
-            font-size: 1.2vw;
-          }
         }
       }
     }
@@ -462,11 +434,13 @@
   }
 
   .section-footer {
-    font-size: 1vw;
+    position: relative;
+    top: -5vh;
+    font-size: 1.1vw;
 
     &-content {
       &-credits {
-        font-size: 1vw;
+        font-size: 1.1vw;
       }
     }
   }

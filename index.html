@@ -21,21 +21,27 @@
               <img
                 src="./img/logo/gepim-logo.webp"
                 alt="gepim logo scritta"
-                class="img-fluid noselect"
+                class="img-fluid logo noselect"
                 loading="lazy"
               />
             </a>
           </div>
           <div class="d-none d-lg-block col-3"></div>
           <div class="col-5 col-md-7 col-lg-5 d-lg-block">
-            <div class="hamburger d-lg-none">
-              <span class="hamburger__top-bun"></span>
-              <span class="hamburger__bottom-bun"></span>
-            </div>
-            <ul class="d-none d-lg-flex navbar__list">
+            <button
+              class="hamburger hamburger--squeeze d-lg-none"
+              type="button"
+              aria-label="Menu"
+              aria-controls="navigation"
+            >
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+            <ul class="d-none d-lg-flex navbar__list" id="navigation">
               <li>
                 <a
-                  href="./page/chi-siamo.html"
+                  href="#chi-siamo"
                   title="link che porta alla pagina chi siamo"
                   class="navbar__list-link noselect"
                   >CHI SIAMO</a
@@ -53,7 +59,7 @@
 
               <li>
                 <a
-                  href="./page/servizi.html"
+                  href="#servizi"
                   title="link che porta alla pagina servizi"
                   class="navbar__list-link noselect"
                   >SERVIZI</a
@@ -62,6 +68,7 @@
 
               <li>
                 <a
+                  id="contattaci"
                   href="#footer"
                   title="link che porta al footer dove ci sono i campi di contatto"
                   class="navbar__list-link noselect"
@@ -105,7 +112,7 @@
         </div>
       </div>
 
-      <section class="section-intro">
+      <section id="chi-siamo" class="section-intro">
         <div class="container">
           <div class="row">
             <div class="col">
@@ -206,18 +213,6 @@
                     loading="lazy"
                   />
                 </picture>
-                <span class="section-intro__cto-info">
-                  <a href="" title="link che porta alla pagina chi sono"
-                    >scopri di più</a
-                  >
-                  <img
-                    src="./img/arrow_forward.svg"
-                    alt="freccia verso destra"
-                    width="20"
-                    class="noselect"
-                    loading="lazy"
-                  />
-                </span>
               </p>
             </div>
           </div>
@@ -328,7 +323,7 @@
 
       <div style="height: 10vh"></div>
 
-      <section class="section-service">
+      <section id="servizi" class="section-service">
         <img
           src="./img/wave-top.svg"
           alt="separatore a onda bianca"
@@ -367,20 +362,6 @@
                   <p class="section-service__content-image-caption">
                     PRONTO INTERVENTO
                   </p>
-                  <p class="section-service__content-image-caption-cto">
-                    <a
-                      href=""
-                      title="link che porta alla pagina servizi alla sezione pronto intervento"
-                      >scopri di più</a
-                    >
-                    <img
-                      src="./img/arrow_forward.svg"
-                      alt="freccia verso destra"
-                      width="20"
-                      class="noselect"
-                      loading="lazy"
-                    />
-                  </p>
                 </figcaption>
               </figure>
             </div>
@@ -406,20 +387,6 @@
                   <p class="section-service__content-image-caption">
                     CONSULENZA
                   </p>
-                  <p class="section-service__content-image-caption-cto">
-                    <a
-                      href=""
-                      title="link che porta alla pagina servizi alla sezione consulenza"
-                      >scopri di più</a
-                    >
-                    <img
-                      src="./img/arrow_forward.svg"
-                      alt="freccia destra"
-                      width="20"
-                      class="noselect"
-                      loading="lazy"
-                    />
-                  </p>
                 </figcaption>
               </figure>
             </div>
@@ -444,20 +411,6 @@
                 <figcaption>
                   <p class="section-service__content-image-caption">
                     ASSISTENZA TELEFONICA
-                  </p>
-                  <p class="section-service__content-image-caption-cto">
-                    <a
-                      href=""
-                      title="link che porta alla pagina servizi alla sezione assistenza telefonica"
-                      >scopri di più</a
-                    >
-                    <img
-                      src="./img/arrow_forward.svg"
-                      alt="freccia destra"
-                      width="20"
-                      class="noselect"
-                      loading="lazy"
-                    />
                   </p>
                 </figcaption>
               </figure>

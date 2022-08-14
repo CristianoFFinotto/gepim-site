@@ -32,20 +32,6 @@
       &-caption {
         font-size: 4.5vw;
         color: variable.$text-color-section-service;
-        /*  color: variable.$text-color; */
-        &-cto {
-          text-align: end;
-          font-size: 4vw;
-
-          a {
-            color: variable.$cto;
-            text-decoration: underline;
-          }
-
-          a:hover {
-            color: variable.$text-color-hover;
-          }
-        }
       }
     }
   }
