@@ -18,14 +18,17 @@
           <div class="d-none d-lg-block col-1"></div>
           <div class="col-7 col-md-5 col-lg-2">
             <a href="/" title="link che porta alla pagina home">
-              <img
-                src="./img/logo/gepim-logo.webp"
-                alt="gepim logo scritta"
-                class="img-fluid logo noselect"
-                width="300"
-                height="300"
-                loading="lazy"
-              />
+              <picture>
+                <source srcset="./img/logo/gepim-logo.webp" type="image/webp" />
+                <img
+                  src="./img/logo/gepim-logo.png"
+                  alt="gepim logo scritta"
+                  class="img-fluid logo noselect"
+                  width="400"
+                  height="98"
+                  loading="lazy"
+                />
+              </picture>
             </a>
           </div>
           <div class="d-none d-lg-block col-3"></div>
@@ -159,17 +162,21 @@
 
                 <picture class="section-intro__image-container">
                   <source
-                    srcset="./img/optimized/reception.avif"
-                    type="image/avif"
+                    media="(max-width: 991.99px)"
+                    srcset="./img/optimized-mobile/reception.webp"
+                    type="image/webp"
                   />
                   <source
-                    srcset="./img/optimized/reception.webp"
+                    media="(min-width: 992px)"
+                    srcset="./img/optimized-pc/reception.webp"
                     type="image/webp"
                   />
                   <img
                     src="./img/reception.jpg"
                     alt="stanza con scrivania di legno ad angolo"
                     class="section-intro__image noselect"
+                    width="2000"
+                    height="1500"
                     loading="lazy"
                   />
                 </picture>
@@ -178,17 +185,21 @@
                 >,
                 <picture class="section-intro__image-container">
                   <source
-                    srcset="./img/optimized/direzionale.avif"
-                    type="image/avif"
+                    media="(max-width: 991.99px)"
+                    srcset="./img/optimized-mobile/direzionale.webp"
+                    type="image/webp"
                   />
                   <source
-                    srcset="./img/optimized/direzionale.webp"
+                    media="(min-width: 992px)"
+                    srcset="./img/optimized-pc/direzionale.webp"
                     type="image/webp"
                   />
                   <img
                     src="./img/direzionale.jpg"
                     alt="stanza con proiettore acceso e con un tavolo rotondo di legno"
                     class="section-intro__image noselect"
+                    width="2000"
+                    height="1500"
                     loading="lazy"
                   />
                 </picture>
@@ -197,17 +208,21 @@
                 >,
                 <picture class="section-intro__image-container">
                   <source
-                    srcset="./img/optimized/collaboratori.avif"
-                    type="image/avif"
+                    media="(max-width: 991.99px)"
+                    srcset="./img/optimized-mobile/collaboratori.webp"
+                    type="image/webp"
                   />
                   <source
-                    srcset="./img/optimized/collaboratori.webp"
+                    media="(min-width: 992px)"
+                    srcset="./img/optimized-pc/collaboratori.webp"
                     type="image/webp"
                   />
                   <img
                     src="./img/collaboratori.jpg"
                     alt="stanza con scrivanie bianche"
                     class="section-intro__image noselect"
+                    width="2000"
+                    height="1500"
                     loading="lazy"
                   />
                 </picture>
@@ -216,17 +231,21 @@
                 >.
                 <picture class="section-intro__image-container">
                   <source
-                    srcset="./img/optimized/legale.avif"
-                    type="image/avif"
+                    media="(max-width: 991.99px)"
+                    srcset="./img/optimized-mobile/legale.webp"
+                    type="image/webp"
                   />
                   <source
-                    srcset="./img/optimized/legale.webp"
+                    media="(min-width: 992px)"
+                    srcset="./img/optimized-pc/legale.webp"
                     type="image/webp"
                   />
                   <img
                     src="./img/legale.jpg"
                     alt="stanza con tavolo in vetro"
                     class="section-intro__image noselect"
+                    width="2000"
+                    height="1500"
                     loading="lazy"
                   />
                 </picture>
@@ -249,11 +268,13 @@
               <figure>
                 <picture>
                   <source
-                    srcset="./img/optimized/supercondominio-torri.avif"
-                    type="image/avif"
+                    media="(max-width: 991.99px)"
+                    srcset="./img/optimized-mobile/supercondominio-torri.webp"
+                    type="image/webp"
                   />
                   <source
-                    srcset="./img/optimized/supercondominio-torri.webp"
+                    media="(min-width: 992px)"
+                    srcset="./img/optimized-pc/supercondominio-torri.webp"
                     type="image/webp"
                   />
                   <img
@@ -261,8 +282,8 @@
                     alt="supercondomini TAT, due grattacieli grigio-azzurri"
                     class="img-fluid section-portfolio__image noselect"
                     loading="lazy"
-                    height="600"
-                    width="600"
+                    width="1632"
+                    height="1194"
                   />
                 </picture>
                 <figcaption class="section-portfolio__figcaption-image">
@@ -277,11 +298,13 @@
               <figure>
                 <picture>
                   <source
-                    srcset="./img/optimized/commerciale.avif"
-                    type="image/avif"
+                    media="(max-width: 991.99px)"
+                    srcset="./img/optimized-mobile/commerciale.webp"
+                    type="image/webp"
                   />
                   <source
-                    srcset="./img/optimized/commerciale.webp"
+                    media="(min-width: 992px)"
+                    srcset="./img/optimized-pc/commerciale.webp"
                     type="image/webp"
                   />
                   <img
@@ -289,8 +312,8 @@
                     alt="condominio commerciale rosso"
                     class="img-fluid section-portfolio__image noselect"
                     loading="lazy"
-                    height="600"
-                    width="600"
+                    width="2000"
+                    height="1500"
                   />
                 </picture>
                 <figcaption class="section-portfolio__figcaption-image">
@@ -305,11 +328,13 @@
               <figure>
                 <picture>
                   <source
-                    srcset="./img/optimized/residenziale-rotonda.avif"
-                    type="image/avif"
+                    media="(max-width: 991.99px)"
+                    srcset="./img/optimized-mobile/residenziale-rotonda.webp"
+                    type="image/webp"
                   />
                   <source
-                    srcset="./img/optimized/residenziale-rotonda.webp"
+                    media="(min-width: 992px)"
+                    srcset="./img/optimized-pc/residenziale-rotonda.webp"
                     type="image/webp"
                   />
                   <img
@@ -317,8 +342,8 @@
                     alt="condominio residenziale a forma sferica"
                     class="img-fluid section-portfolio__image noselect"
                     loading="lazy"
-                    height="600"
-                    width="600"
+                    width="2000"
+                    height="1500"
                   />
                 </picture>
                 <figcaption class="section-portfolio__figcaption-image">
@@ -366,11 +391,13 @@
               <figure>
                 <picture>
                   <source
-                    srcset="./img/optimized/intervento.avif"
-                    type="image/avif"
+                    media="(max-width: 991.99px)"
+                    srcset="./img/optimized-mobile/intervento.webp"
+                    type="image/webp"
                   />
                   <source
-                    srcset="./img/optimized/intervento.webp"
+                    media="(min-width: 992px)"
+                    srcset="./img/optimized-pc/intervento.webp"
                     type="image/webp"
                   />
                   <img
@@ -378,8 +405,8 @@
                     alt="immagine uomo d'affari vestito elegante con orologio"
                     class="img-fluid section-service__content-image noselect"
                     loading="lazy"
-                    height="600"
-                    width="600"
+                    width="960"
+                    height="639"
                   />
                 </picture>
                 <figcaption>
@@ -393,11 +420,13 @@
               <figure>
                 <picture>
                   <source
-                    srcset="./img/optimized/consulenza.avif"
-                    type="image/avif"
+                    media="(max-width: 991.99px)"
+                    srcset="./img/optimized-mobile/consulenza.webp"
+                    type="image/webp"
                   />
                   <source
-                    srcset="./img/optimized/consulenza.webp"
+                    media="(min-width: 992px)"
+                    srcset="./img/optimized-pc/consulenza.webp"
                     type="image/webp"
                   />
                   <img
@@ -405,8 +434,8 @@
                     alt="tavolo per assemblee e consulenze vuoto"
                     class="img-fluid section-service__content-image noselect"
                     loading="lazy"
-                    height="600"
-                    width="600"
+                    width="2592"
+                    height="1728"
                   />
                 </picture>
                 <figcaption>
@@ -420,20 +449,22 @@
               <figure>
                 <picture>
                   <source
-                    srcset="./img/optimized/telefono.avif"
-                    type="image/avif"
+                    media="(max-width: 991.99px)"
+                    srcset="./img/optimized-mobile/telefono.webp"
+                    type="image/webp"
                   />
                   <source
-                    srcset="./img/optimized/telefono.webp"
+                    media="(min-width: 992px)"
+                    srcset="./img/optimized-pc/telefono.webp"
                     type="image/webp"
                   />
                   <img
-                    src="./img/telefono.jpg"
+                    src="./img/optimized/telefono.webp"
                     alt="telefono sulla scrivania nero con cavo"
                     class="img-fluid section-service__content-image noselect"
                     loading="lazy"
-                    height="600"
-                    width="600"
+                    width="3000"
+                    height="2000"
                   />
                 </picture>
                 <figcaption>
@@ -456,14 +487,17 @@
           <div class="row">
             <div class="col-6 col-md-4 col-lg-3">
               <a href="https://www.designrenovation.it/" target="_blank">
-                <img
-                  src="./img/logo/new-style.svg"
-                  alt="new style logo"
-                  class="img-fluid section-partner__logo noselect"
-                  loading="lazy"
-                  height="400"
-                  width="400"
-              /></a>
+                <picture>
+                  <img
+                    src="./img/logo/new-style.svg"
+                    alt="new style logo"
+                    class="img-fluid section-partner__logo noselect"
+                    loading="lazy"
+                    height="400"
+                    width="400"
+                  />
+                </picture>
+              </a>
             </div>
             <div class="col-6 col-md-4 col-lg-3">
               <img
