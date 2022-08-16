@@ -60,7 +60,6 @@
                   href="./page/portfolio.html"
                   title="link che porta alla pagina portfolio"
                   class="navbar__list-link noselect"
-                  target="_blank"
                   >PORTFOLIO</a
                 >
               </li>
@@ -119,7 +118,9 @@
                   <br />
                   con massima profesionalità e competenza <br />
 
-                  <em>"HOW TO MAKE A DIFFERENCE"</em>
+                  <em class="section-title__sub-title--italic"
+                    >"HOW TO MAKE A DIFFERENCE"</em
+                  >
                 </h2>
               </div>
               <div class="d-none d-lg-block col-3"></div>
@@ -176,7 +177,7 @@
                   <img
                     src="./img/reception.jpg"
                     alt="stanza con scrivania di legno ad angolo"
-                    class="section-intro__image noselect"
+                    class="img-fluid section-intro__image noselect"
                     width="2000"
                     height="1500"
                     loading="lazy"
@@ -199,7 +200,7 @@
                   <img
                     src="./img/direzionale.jpg"
                     alt="stanza con proiettore acceso e con un tavolo rotondo di legno"
-                    class="section-intro__image noselect"
+                    class="img-fluid section-intro__image noselect"
                     width="2000"
                     height="1500"
                     loading="lazy"
@@ -222,7 +223,7 @@
                   <img
                     src="./img/collaboratori.jpg"
                     alt="stanza con scrivanie bianche"
-                    class="section-intro__image noselect"
+                    class="img-fluid section-intro__image noselect"
                     width="2000"
                     height="1500"
                     loading="lazy"
@@ -245,7 +246,7 @@
                   <img
                     src="./img/legale.jpg"
                     alt="stanza con tavolo in vetro"
-                    class="section-intro__image noselect"
+                    class="img-fluid section-intro__image noselect"
                     width="2000"
                     height="1500"
                     loading="lazy"
@@ -258,120 +259,125 @@
       </section>
 
       <section class="container-fluid section-portfolio">
-        <div class="container-fluid section-portfolio-content">
-          <h2 class="section-portfolio__title noselect">
-            <strong
-              >un percorso di
-              <span class="section-portfolio__title--underlined">SUCCESSI</span>
-            </strong>
-          </h2>
-          <div class="row">
-            <div class="col-11 col-md-7 col-lg-4">
-              <figure>
-                <picture>
-                  <source
-                    media="(max-width: 991.99px)"
-                    srcset="./img/optimized-mobile/supercondominio-torri.webp"
-                    type="image/webp"
-                  />
-                  <source
-                    media="(min-width: 992px)"
-                    srcset="./img/optimized-pc/supercondominio-torri.webp"
-                    type="image/webp"
-                  />
-                  <img
-                    src="./img/supercondominio-torri.jpg"
-                    alt="supercondomini TAT, due grattacieli grigio-azzurri"
-                    class="img-fluid section-portfolio__image noselect"
-                    loading="lazy"
-                    width="1632"
-                    height="1194"
-                  />
-                </picture>
-                <figcaption class="section-portfolio__figcaption-image">
-                  <strong>Supercondominio</strong> TAT, <br />
-                  corso Ivrea 14, Asti (AT)
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-11 col-md-7 col-lg-4">
-              <figure>
-                <picture>
-                  <source
-                    media="(max-width: 991.99px)"
-                    srcset="./img/optimized-mobile/commerciale.webp"
-                    type="image/webp"
-                  />
-                  <source
-                    media="(min-width: 992px)"
-                    srcset="./img/optimized-pc/commerciale.webp"
-                    type="image/webp"
-                  />
-                  <img
-                    src="./img/commerciale.jpg"
-                    alt="condominio commerciale rosso"
-                    class="img-fluid section-portfolio__image noselect"
-                    loading="lazy"
-                    width="2000"
-                    height="1500"
-                  />
-                </picture>
-                <figcaption class="section-portfolio__figcaption-image">
-                  <strong>Complesso commerciale</strong> Maridue 1A, <br />
-                  corso Alessandria 192, Asti (AT)
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-11 col-md-7 col-lg-4">
-              <figure>
-                <picture>
-                  <source
-                    media="(max-width: 991.99px)"
-                    srcset="./img/optimized-mobile/residenziale-rotonda.webp"
-                    type="image/webp"
-                  />
-                  <source
-                    media="(min-width: 992px)"
-                    srcset="./img/optimized-pc/residenziale-rotonda.webp"
-                    type="image/webp"
-                  />
-                  <img
-                    src="./img/residenziale-rotonda.jpg"
-                    alt="condominio residenziale a forma sferica"
-                    class="img-fluid section-portfolio__image noselect"
-                    loading="lazy"
-                    width="2000"
-                    height="1500"
-                  />
-                </picture>
-                <figcaption class="section-portfolio__figcaption-image">
-                  <strong>Condominio residenziale</strong> La Rotonda, <br />
-                  via Giovanni Gerbi 39, Asti (AT)
-                </figcaption>
-              </figure>
-            </div>
-
-            <div class="d-none d-lg-block col-6"></div>
-
-            <div class="col-11 col-md-12 col-lg-2">
-              <div class="section-portfolio__cto">
-                <a
-                  href="./page/portfolio.html"
-                  title="link che porta alla pagina portfolio"
-                  class="col-2 section-portfolio__cto-link noselect"
-                  >PORFOLIO</a
+        <h2 class="section-portfolio__title noselect">
+          <strong
+            >un percorso di
+            <span class="section-portfolio__title--underlined">SUCCESSI</span>
+          </strong>
+        </h2>
+        <div class="row">
+          <div class="col-11 col-md-7 col-lg-4">
+            <figure>
+              <picture>
+                <source
+                  media="(max-width: 991.99px)"
+                  srcset="./img/optimized-mobile/supercondominio-torri.webp"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 992px)"
+                  srcset="./img/optimized-pc/supercondominio-torri.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="./img/supercondominio-torri.jpg"
+                  alt="supercondomini TAT, due grattacieli grigio-azzurri"
+                  class="img-fluid section-portfolio__image noselect"
+                  loading="lazy"
+                  width="1632"
+                  height="1194"
+                />
+              </picture>
+              <figcaption class="section-portfolio__figcaption-image">
+                <strong class="section-portfolio__figcaption-image--normal"
+                  >Supercondominio</strong
                 >
-              </div>
+                TAT, <br />
+                corso Ivrea 14, Asti (AT)
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-11 col-md-7 col-lg-4">
+            <figure>
+              <picture>
+                <source
+                  media="(max-width: 991.99px)"
+                  srcset="./img/optimized-mobile/commerciale.webp"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 992px)"
+                  srcset="./img/optimized-pc/commerciale.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="./img/commerciale.jpg"
+                  alt="condominio commerciale rosso"
+                  class="img-fluid section-portfolio__image noselect"
+                  loading="lazy"
+                  width="2000"
+                  height="1500"
+                />
+              </picture>
+              <figcaption class="section-portfolio__figcaption-image">
+                <strong class="section-portfolio__figcaption-image--normal"
+                  >Complesso commerciale</strong
+                >
+                Maridue 1A, <br />
+                corso Alessandria 192, Asti (AT)
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-11 col-md-7 col-lg-4">
+            <figure>
+              <picture>
+                <source
+                  media="(max-width: 991.99px)"
+                  srcset="./img/optimized-mobile/residenziale-rotonda.webp"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 992px)"
+                  srcset="./img/optimized-pc/residenziale-rotonda.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="./img/residenziale-rotonda.jpg"
+                  alt="condominio residenziale a forma sferica"
+                  class="img-fluid section-portfolio__image noselect"
+                  loading="lazy"
+                  width="2000"
+                  height="1500"
+                />
+              </picture>
+              <figcaption class="section-portfolio__figcaption-image">
+                <strong class="section-portfolio__figcaption-image--normal"
+                  >Condominio residenziale</strong
+                >
+                La Rotonda, <br />
+                via Giovanni Gerbi 39, Asti (AT)
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="d-none d-lg-block col-6"></div>
+
+          <div class="col-11 col-md-12 col-lg-2">
+            <div class="section-portfolio__cto">
+              <a
+                href="./page/portfolio.html"
+                title="link che porta alla pagina portfolio"
+                class="col-2 section-portfolio__cto-link noselect"
+                >PORTFOLIO</a
+              >
             </div>
           </div>
         </div>
       </section>
-
-      <div style="height: 10vh"></div>
 
       <section id="servizi" class="section-service">
         <img
@@ -379,10 +385,10 @@
           alt="separatore a onda bianca"
           class="noselect"
         />
-        <div class="container section-service__content">
+        <div class="container">
           <div class="row">
             <div class="col">
-              <h2 class="section-service__content-title noselect">
+              <h2 class="section-service__title noselect">
                 <strong>COSA TI OFFRIAMO</strong>
               </h2>
             </div>
@@ -405,14 +411,14 @@
                   <img
                     src="./img/intervento.jpg"
                     alt="immagine uomo d'affari vestito elegante con orologio"
-                    class="img-fluid section-service__content-image noselect"
+                    class="img-fluid section-service__image noselect"
                     loading="lazy"
                     width="960"
                     height="639"
                   />
                 </picture>
                 <figcaption>
-                  <p class="section-service__content-image-caption">
+                  <p class="section-service__image-caption">
                     <strong>PRONTO INTERVENTO</strong>
                   </p>
                 </figcaption>
@@ -434,14 +440,14 @@
                   <img
                     src="./img/consulenza.jpg"
                     alt="tavolo per assemblee e consulenze vuoto"
-                    class="img-fluid section-service__content-image noselect"
+                    class="img-fluid section-service__image noselect"
                     loading="lazy"
                     width="2592"
                     height="1728"
                   />
                 </picture>
                 <figcaption>
-                  <p class="section-service__content-image-caption">
+                  <p class="section-service__image-caption">
                     <strong>CONSULENZA</strong>
                   </p>
                 </figcaption>
@@ -463,14 +469,14 @@
                   <img
                     src="./img/optimized/telefono.webp"
                     alt="telefono sulla scrivania nero con cavo"
-                    class="img-fluid section-service__content-image noselect"
+                    class="img-fluid section-service__image noselect"
                     loading="lazy"
                     width="3000"
                     height="2000"
                   />
                 </picture>
                 <figcaption>
-                  <p class="section-service__content-image-caption">
+                  <p class="section-service__image-caption">
                     <strong>ASSISTENZA TELEFONICA</strong>
                   </p>
                 </figcaption>

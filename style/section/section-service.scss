@@ -1,38 +1,37 @@
 .section-service {
   background-color: variable.$section-color;
 
-  &__content {
-    .row:nth-of-type(2) {
-      height: fit-content;
-      margin-top: 10vh;
+  .row {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .row:nth-of-type(2) {
+    height: fit-content;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    .col {
       display: flex;
       justify-content: center;
-      .col {
-        display: flex;
-        justify-content: center;
-      }
     }
+  }
 
-    &-title {
-      font-size: 9vw;
-      font-style: italic;
-      text-align: center;
-      text-decoration: underline;
-      color: variable.$cto;
-      margin-top: 8vh;
-    }
+  &__title {
+    font-size: 9vw;
+    font-style: italic;
+    text-align: center;
+    text-decoration: underline;
+    color: variable.$cto;
+    margin-top: 8vh;
+  }
 
-    figure {
-      text-align: start;
-    }
+  &__image {
+    border-radius: 10px;
 
-    &-image {
-      border-radius: 10px;
-
-      &-caption {
-        font-size: 4.5vw;
-        color: variable.$text-color-section-service;
-      }
+    &-caption {
+      font-size: 4.5vw;
+      color: variable.$text-color-section-service;
     }
   }
 }
