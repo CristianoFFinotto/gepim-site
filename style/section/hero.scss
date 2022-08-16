@@ -1,6 +1,15 @@
 .hero {
   height: 100vh;
+  width: 100%;
   position: relative;
+  background-image: url("../../img/hero.webp");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
 
   &__content {
     position: absolute;
@@ -9,10 +18,5 @@
     left: 50%;
     box-shadow: rgba(0, 0, 0, 0.7) 0 0 0 1000000px inset;
     transform: translate(-50%, -50%);
-    background-image: url("../../img/hero.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
   }
 }
