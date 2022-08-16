@@ -15,17 +15,25 @@
   </head>
   <body>
     <header class="container-fluid header">
-      <nav class="header__navbar" role="navigation">
+      <nav class="header__navbar">
         <div class="row">
           <div class="d-none d-lg-block col-1"></div>
           <div class="col-7 col-md-5 col-lg-2">
             <a href="/" title="link che porta alla pagina home">
-              <img
-                src="../img/logo/gepim-logo.webp"
-                alt="gepim logo scritta"
-                class="img-fluid logo noselect"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  srcset="../img/logo/gepim-logo.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="../img/logo/gepim-logo.png"
+                  alt="gepim logo scritta"
+                  class="img-fluid logo noselect"
+                  width="400"
+                  height="98"
+                  loading="lazy"
+                />
+              </picture>
             </a>
           </div>
           <div class="d-none d-lg-block col-3"></div>
@@ -123,7 +131,7 @@
       </div>
     </div>
 
-    <footer class="container-fluid section-footer mt-5" id="footer">
+    <footer class="container-fluid section-footer pt-5" id="footer">
       <address>
         <div class="row section-footer-content">
           <div class="col-6">
