@@ -5733,6 +5733,7 @@ a {
   -webkit-backdrop-filter: blur(5px);
 }
 .section-intro__image {
+  object-fit: cover;
   width: 90%;
   height: 40%;
   position: absolute;
@@ -5762,6 +5763,7 @@ a {
   color: #cf5c36;
   padding-left: 10px;
   padding-right: 10px;
+  padding-top: 8vh;
   font-size: 8vw;
 }
 .section-portfolio .row {
@@ -6034,12 +6036,12 @@ a {
     height: 50%;
   }
   .section-portfolio__title {
-    font-size: 5vw;
+    font-size: 5.5vw;
     padding-left: 18vw;
     padding-right: 18vw;
   }
   .section-portfolio__title--underlined {
-    font-size: 6vw;
+    font-size: 6.5vw;
   }
   .section-portfolio__cto {
     font-size: 3vw;
@@ -6056,13 +6058,13 @@ a {
     font-size: 6.5vw;
   }
   .section-service__image-caption {
-    font-size: 2.5vw;
+    font-size: 2.8vw;
   }
   .section-footer {
-    font-size: 2vw;
+    font-size: 2.3vw;
   }
   .section-footer-content-credits {
-    font-size: 2vw;
+    font-size: 2.3vw;
   }
 }
 /* tablet landscape */
@@ -6317,6 +6319,11 @@ a {
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none; /* Non-prefixed version, currently
              supported by Chrome, Edge, Opera and Firefox */
+}
+
+.wave {
+  width: 100%;
+  height: auto;
 }
 
 html {
