@@ -1,5 +1,5 @@
 .header {
-  padding-top: 6vh;
+  padding-top: 6%;
   position: absolute;
   z-index: 1;
 
@@ -14,19 +14,16 @@
   /*** - ***/
 
   &__navbar {
+    position: relative;
     .navbar__list {
       list-style: none;
-      padding: 0;
-      margin: 0;
       font-size: 7vw;
       position: absolute;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
       top: 35vh;
-      right: 2vw;
-      left: 4.5vw;
+      width: 100%;
+      text-align: center;
 
       &-link {
         color: variable.$text-color;

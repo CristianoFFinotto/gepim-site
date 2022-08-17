@@ -1,6 +1,7 @@
 .section-intro {
   background-color: variable.$section-color;
   position: relative;
+  height: 100%;
 
   &__text {
     color: variable.$text-color-section-intro;
@@ -8,13 +9,17 @@
     text-align: center;
     padding: 3vh 0;
 
+    &--normal {
+      font-weight: normal;
+    }
+
     &-cto {
       border-bottom: 2px solid variable.$cto;
       border-right: none;
       border-left: none;
       border-top: none;
       background-color: transparent;
-      font-weight: normal;
+      font-weight: bold;
       line-height: normal;
       color: inherit;
     }

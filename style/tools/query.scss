@@ -1,107 +1,8 @@
 /* mobile landscape */
 
 @media (max-device-width: 980px) and (orientation: landscape) {
-  .header {
-    .logo {
-      transform: scale(0.7);
-      position: relative;
-      left: -5vw;
-    }
-
-    &__navbar {
-      .navbar__list {
-        font-size: 3vw;
-      }
-    }
-  }
-
-  .section-title {
-    margin-top: 10vh;
-
-    &__title {
-      font-size: 5vw;
-    }
-
-    &__sub-title {
-      font-size: 3vw;
-      line-height: 8vh;
-    }
-
-    em {
-      font-size: 2vw;
-    }
-  }
-
-  .section-intro {
-    &__text {
-      font-size: 3.5vw;
-    }
-
-    &__image {
-      width: 70%;
-      height: 40%;
-    }
-  }
-
-  .section-portfolio {
-    &__title {
-      font-size: 4vw;
-
-      &--underlined {
-        font-size: 5vw;
-      }
-    }
-    &__cto {
-      font-size: 2.5vw;
-      margin-top: 20vh;
-    }
-
-    .row {
-      margin-top: 10vh;
-    }
-
-    &__figcaption-image {
-      font-size: 2vw;
-    }
-  }
-
-  .section-service {
-    &__title {
-      font-size: 5.5vw;
-    }
-    &__image {
-      &-caption {
-        font-size: 2.5vw;
-      }
-    }
-  }
-
-  .section-partner {
-    padding-top: 30vh;
-    &__title {
-      font-size: 6vw;
-    }
-    &__logo {
-      transform: scale(0.8);
-    }
-
-    .row {
-      margin-top: 20vh;
-    }
-  }
-
-  .section-footer {
-    font-size: 2vw;
-
-    &-content {
-      &-credits {
-        font-size: 2vw;
-      }
-    }
-  }
-
-  .section-maps {
-    padding-top: 40vh;
+  .rotation {
+    display: none;
   }
 }
 
@@ -297,15 +198,14 @@
   .header {
     height: auto;
     background-color: transparent;
+    padding-top: 3%;
     &__navbar {
       .navbar__list {
-        height: 100%;
-        display: flex;
-        flex-flow: row nowrap;
         justify-content: space-around;
         font-size: 1vw;
-        position: initial;
+        position: static;
         width: auto;
+        align-items: center;
 
         li {
           text-align: initial;
@@ -377,13 +277,21 @@
     }
   }
 
+  .container-arrow {
+    bottom: 3vh;
+    &__arrow {
+      height: 50px;
+      width: 50px;
+    }
+  }
+
   .section-portfolio {
+    height: 98vh;
     &__title {
       position: relative;
       font-size: 4vw;
       width: 30%;
       padding: 0;
-      top: 10vh;
       left: 5vw;
 
       &--underlined {
@@ -400,15 +308,17 @@
 
     .row:nth-of-type(1) {
       position: relative;
-      top: 100px;
+      top: -200px;
       justify-content: end;
     }
     .row:nth-of-type(2) {
+      position: relative;
+      top: -400px;
       justify-content: center;
     }
     .row:nth-of-type(3) {
       position: relative;
-      top: -100px;
+      top: -650px;
       align-items: end;
     }
 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0
 "
     />
     <title>
@@ -50,7 +50,7 @@
     <meta property="og:type" content="website" />
     <link rel="stylesheet" href="./style/main.css" />
   </head>
-  <body>
+  <body class="rotation">
     <header class="container-fluid header">
       <nav class="header__navbar">
         <div class="row">
@@ -94,7 +94,7 @@
 
               <li>
                 <a
-                  href="./page/portfolio.html"
+                  href="#portfolio"
                   title="link che porta alla pagina portfolio"
                   class="navbar__list-link noselect"
                   >PORTFOLIO</a
@@ -134,7 +134,7 @@
       </nav>
     </header>
 
-    <div id="content" class="d-lg-block">
+    <div id="content" style="height: 100%" class="d-lg-block">
       <div class="hero">
         <div class="container-fluid hero__content">
           <section class="section-title">
@@ -164,36 +164,75 @@
             </div>
           </section>
         </div>
+        <div class="container-arrow">
+          <a href="#chi-siamo">
+            <img
+              src="./img/arrow-down.svg"
+              alt="freccia verso il basso"
+              class="container-arrow__arrow container-arrow__arrow--white noselect"
+              width="330"
+              height="330"
+            />
+          </a>
+        </div>
       </div>
 
       <section id="chi-siamo" class="section-intro">
         <div class="container">
           <div class="row">
             <div class="col">
-              <h2 class="section-portfolio__title--underlined">
+              <h2 class="section-portfolio__title--underlined pt-4">
                 <strong>DAL 2006</strong>
               </h2>
               <p class="section-intro__text">
-                Curiamo il <strong>rapporto fiduciario</strong> con i nostri
-                clienti, ci occupiamo in modo esclusivo di
-                <strong>amministrare condominii</strong> oltre alla
-                <strong>gestione patrimoniale</strong> di multi proprieta.
-                Completa la nostra gamma di servizi: la
-                <strong>redazione di tabelle millesimali</strong> e la stesura
-                di accurati
-                <strong>regolamenti condominiali</strong> (verticali,
-                orizzontali, supercondominii e centri commerciali). La nostra
-                struttura si rivolge da tempo a
-                <strong>realtà commerciali</strong> :
-                <strong>big store</strong> ,
-                <strong>gallerie commerciali</strong> ,
-                <strong>centri direzionali</strong> ed
-                <strong>autorimesse multipiano</strong>.
+                Curiamo il
+                <strong class="section-intro__text--normal"
+                  >rapporto fiduciario</strong
+                >
+                con i nostri clienti, ci occupiamo in modo esclusivo di
+                <strong class="section-intro__text--normal"
+                  >amministrare condominii</strong
+                >
+                oltre alla
+                <strong class="section-intro__text--normal"
+                  >gestione patrimoniale</strong
+                >
+                di multi proprietà. Completa la nostra gamma di servizi: la
+                <strong class="section-intro__text--normal"
+                  >redazione di tabelle millesimali</strong
+                >
+                e la stesura di accurati
+                <strong class="section-intro__text--normal"
+                  >regolamenti condominiali</strong
+                >
+                (verticali, orizzontali, supercondominii e centri commerciali).
+                La nostra struttura si rivolge da tempo a
+                <strong class="section-intro__text--normal"
+                  >realtà commerciali</strong
+                >
+                :
+                <strong class="section-intro__text--normal">big store</strong>
+                ,
+                <strong class="section-intro__text--normal"
+                  >gallerie commerciali</strong
+                >
+                ,
+                <strong class="section-intro__text--normal"
+                  >centri direzionali</strong
+                >
+                ed
+                <strong class="section-intro__text--normal"
+                  >autorimesse multipiano</strong
+                >.
                 <br />
                 <br />
-                Abbiamo ad <strong>Asti</strong> un
-                <strong>ufficio tecnico</strong> all'avanguradia: fotocopiatore
-                multifunzione, proiettore, pc (desktop, laptop),
+                Abbiamo ad
+                <strong class="section-intro__text--normal">Asti</strong> un
+                <strong class="section-intro__text--normal"
+                  >ufficio tecnico</strong
+                >
+                all'avanguradia: fotocopiatore multifunzione, proiettore, pc
+                (desktop, laptop),
                 <button type="button" class="section-intro__text-cto">
                   <em>reception</em></button
                 >,
@@ -290,10 +329,21 @@
               </p>
             </div>
           </div>
+          <div class="container-arrow">
+            <a href="#portfolio">
+              <img
+                src="./img/arrow-down.svg"
+                alt="freccia verso il basso"
+                class="container-arrow__arrow noselect"
+                width="330"
+                height="330"
+              />
+            </a>
+          </div>
         </div>
       </section>
 
-      <section class="container-fluid section-portfolio">
+      <section id="portfolio" class="container-fluid section-portfolio">
         <h2 class="section-portfolio__title noselect">
           <strong
             >un percorso di
