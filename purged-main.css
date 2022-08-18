@@ -645,6 +645,9 @@ a {
   border-radius: 10px;
 }
 
+.section-intro__image-container--visible {
+  left: 50%;
+}
 .section-portfolio {
   padding: 0 2vw;
   position: relative;
