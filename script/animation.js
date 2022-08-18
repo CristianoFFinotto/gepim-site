@@ -25,12 +25,12 @@ if (screen.width < 992) {
         duration: 1, xPercent: -100, opacity: 0, clearProps: 'all'
     });
     gsap.from('.section-service .col-11:nth-child(2)', {
-        scrollTrigger: { trigger: ".section-service", start: 'top top', toggleActions: 'restart' },
+        scrollTrigger: { trigger: ".section-service", start: 'top 1px', toggleActions: 'restart' },
         duration: 1, xPercent: 100, opacity: 0, clearProps: 'all'
     });
 
     gsap.from('.section-service .col-11:nth-child(3)', {
-        scrollTrigger: { trigger: ".section-service", start: 'top top', toggleActions: 'restart' },
+        scrollTrigger: { trigger: ".section-service", start: 'top 1px', toggleActions: 'restart' },
         duration: 1, xPercent: -100, opacity: 0, clearProps: 'all'
     });
 
@@ -81,7 +81,7 @@ if (screen.width >= 992) {
 }
 
 gsap.from('.section-footer-content', {
-    scrollTrigger: { trigger: ".section-footer", start: 'top 800px', toggleActions: 'restart' },
+    scrollTrigger: { trigger: ".section-footer", start: 'top 700px', toggleActions: 'restart' },
     duration: 0.5, yPercent: 100, opacity: 0, clearProps: 'all', stagger: 1
 })
 
