@@ -81,7 +81,7 @@ if (screen.width >= 992) {
 }
 
 gsap.from('.section-footer-content', {
-    scrollTrigger: { trigger: ".section-footer", start: 'top 600px', toggleActions: 'restart' },
+    scrollTrigger: { trigger: ".section-footer", start: 'top 650px', toggleActions: 'restart' },
     duration: 0.5, yPercent: 100, opacity: 0, clearProps: 'all', stagger: 1
 })
 
