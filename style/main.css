@@ -5540,6 +5540,7 @@ a {
   position: absolute;
   margin: 0;
   padding: 0;
+  left: 1.2vw;
   top: 35vh;
   width: 100%;
   text-align: center;

@@ -21,6 +21,7 @@
       position: absolute;
       margin: 0;
       padding: 0;
+      left: 1.2vw;
       top: 35vh;
       width: 100%;
       text-align: center;
@@ -39,5 +40,5 @@
 
 .header-toggle-event {
   height: 100vh;
-  background-color: variable.$header-expand-mobile-tablet;
+  background-color: #2c3333;
 }
