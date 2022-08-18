@@ -5741,7 +5741,9 @@ a {
 }
 
 .section-portfolio {
+  padding: 0 2vw;
   position: relative;
+  overflow-x: hidden;
   /*** CTO ***/
   /*** - ***/
 }
@@ -5784,7 +5786,7 @@ a {
   margin-bottom: 40px;
   text-align: center;
   width: fit-content;
-  margin-top: 5vh;
+  margin-top: 10vh;
 }
 .section-portfolio__cto-link:hover {
   color: #b1aea5;
@@ -5796,6 +5798,7 @@ a {
 
 .section-service {
   background-color: #d9d9d9;
+  overflow-x: hidden;
 }
 .section-service .row {
   max-width: 100%;
@@ -5830,6 +5833,7 @@ a {
 .section-partner {
   background-color: #d9d9d9;
   padding-top: 10vh;
+  overflow-x: hidden;
 }
 .section-partner__title {
   font-size: 8vw;
@@ -5974,14 +5978,78 @@ a {
   filter: invert(100%) sepia(50%) saturate(576%) hue-rotate(300deg) brightness(104%) contrast(99%);
 }
 
-.rotation {
-  display: initial;
-}
-
 /* mobile landscape */
 @media (max-device-width: 980px) and (orientation: landscape) {
-  .rotation {
-    display: none;
+  .header .logo {
+    transform: scale(0.7);
+    position: relative;
+    left: -5vw;
+  }
+  .header__navbar .navbar__list {
+    font-size: 3vw;
+  }
+  .section-title {
+    margin-top: 10vh;
+  }
+  .section-title__title {
+    font-size: 5vw;
+  }
+  .section-title__sub-title {
+    font-size: 3vw;
+    line-height: 8vh;
+  }
+  .section-title em {
+    font-size: 2vw;
+  }
+  .section-intro__text {
+    font-size: 2.2vw;
+  }
+  .section-intro__image {
+    width: 70%;
+    height: 80%;
+  }
+  .section-portfolio__title {
+    font-size: 4vw;
+  }
+  .section-portfolio__title--underlined {
+    font-size: 5vw;
+  }
+  .section-portfolio__cto {
+    font-size: 2.5vw;
+    margin-top: 20vh;
+  }
+  .section-portfolio .row {
+    margin-top: 10vh;
+  }
+  .section-portfolio__figcaption-image {
+    font-size: 2vw;
+  }
+  .section-service__title {
+    font-size: 5.5vw;
+  }
+  .section-service__image-caption {
+    font-size: 2.5vw;
+  }
+  .section-partner {
+    padding-top: 30vh;
+  }
+  .section-partner__title {
+    font-size: 6vw;
+  }
+  .section-partner__logo {
+    transform: scale(0.8);
+  }
+  .section-partner .row {
+    margin-top: 20vh;
+  }
+  .section-footer {
+    font-size: 2vw;
+  }
+  .section-footer-content-credits {
+    font-size: 2vw;
+  }
+  .section-maps {
+    padding-top: 40vh;
   }
 }
 /* tablet potrait */
@@ -6014,7 +6082,7 @@ a {
     font-size: 3.5vw;
   }
   .section-intro__image {
-    width: 70%;
+    width: 80%;
     height: 50%;
   }
   .section-portfolio__title {
@@ -6059,8 +6127,8 @@ a {
     font-size: 3.5vw;
   }
   .section-intro__image {
-    width: 45% !important;
-    height: 80% !important;
+    width: 60% !important;
+    height: 60% !important;
   }
   .section-portfolio .row {
     padding-top: 8vh;
@@ -6166,7 +6234,7 @@ a {
     text-align: justify;
   }
   .section-intro__image {
-    width: 40%;
+    width: 50%;
     height: 70%;
   }
   .container-arrow {
@@ -6177,7 +6245,7 @@ a {
     width: 50px;
   }
   .section-portfolio {
-    height: 98vh;
+    height: 100%;
     /*** CTO ***/
     /*** - ***/
   }
@@ -6191,36 +6259,30 @@ a {
   .section-portfolio__title--underlined {
     font-size: 4.5vw;
   }
+  .section-portfolio .col-11:nth-child(1) {
+    position: relative;
+    top: 20vh;
+  }
+  .section-portfolio .col-11:nth-child(2) {
+    position: relative;
+    top: 10vh;
+  }
+  .section-portfolio .col-11:nth-child(3) {
+    position: relative;
+  }
   .section-portfolio__cto {
     position: initial;
-  }
-  .section-portfolio .row {
-    height: 45vh;
-  }
-  .section-portfolio .row:nth-of-type(1) {
-    position: relative;
-    top: -200px;
-    justify-content: end;
-  }
-  .section-portfolio .row:nth-of-type(2) {
-    position: relative;
-    top: -400px;
-    justify-content: center;
-  }
-  .section-portfolio .row:nth-of-type(3) {
-    position: relative;
-    top: -650px;
-    align-items: end;
   }
   .section-portfolio__figcaption-image {
     font-size: 1vw;
   }
   .section-portfolio__cto {
-    font-size: 2.5vw;
+    font-size: 2vw;
     width: auto;
     height: auto;
     position: relative;
     right: 5vw;
+    top: -12vh;
   }
   .section-service__title {
     font-size: 4vw;
@@ -6231,7 +6293,7 @@ a {
     font-size: 1.5vw;
   }
   .section-partner {
-    padding-top: 20vh;
+    padding-top: 15vh;
   }
   .section-partner__title {
     font-size: 4.5vw;

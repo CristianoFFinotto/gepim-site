@@ -1,6 +1,7 @@
 .section-partner {
   background-color: variable.$section-color;
   padding-top: 10vh;
+  overflow-x: hidden;
 
   &__title {
     font-size: 8vw;
