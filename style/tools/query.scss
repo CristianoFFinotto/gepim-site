@@ -517,4 +517,14 @@
   .section-maps {
     padding-top: 10vh;
   }
+
+  .section-404 {
+    &__title {
+      font-size: 4vw;
+    }
+
+    &__link {
+      font-size: 2vw;
+    }
+  }
 }

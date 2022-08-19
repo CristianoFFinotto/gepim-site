@@ -1,0 +1,29 @@
+.section-404 {
+  height: 100%;
+  width: 100%;
+  background-color: variable.$section-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__content {
+    text-align: center;
+  }
+
+  &__title {
+    color: variable.$cto;
+    font-size: 12vw;
+    font-weight: bold;
+  }
+
+  &__link {
+    font-weight: bold;
+    font-size: 8vw;
+    border-bottom: 2px solid variable.$cto;
+    color: variable.$header-expand-mobile-tablet;
+  }
+
+  &__link:hover {
+    color: variable.$text-color-hover;
+  }
+}

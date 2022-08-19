@@ -5926,6 +5926,32 @@ a {
   margin-top: 10vh;
 }
 
+.section-404 {
+  height: 100%;
+  width: 100%;
+  background-color: #d9d9d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-404__content {
+  text-align: center;
+}
+.section-404__title {
+  color: #cf5c36;
+  font-size: 12vw;
+  font-weight: bold;
+}
+.section-404__link {
+  font-weight: bold;
+  font-size: 8vw;
+  border-bottom: 2px solid #cf5c36;
+  color: #2c3333;
+}
+.section-404__link:hover {
+  color: #b1aea5;
+}
+
 ::-webkit-scrollbar {
   background-color: transparent;
   height: 20px;
@@ -6340,6 +6366,12 @@ a {
   }
   .section-maps {
     padding-top: 10vh;
+  }
+  .section-404__title {
+    font-size: 4vw;
+  }
+  .section-404__link {
+    font-size: 2vw;
   }
 }
 html {
