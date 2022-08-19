@@ -691,11 +691,11 @@ a {
   border: 2px solid #cf5c36;
   border-style: double;
   border-radius: 10px;
-  padding: 20px;
+  padding: 10px;
   margin-bottom: 40px;
   text-align: center;
   width: fit-content;
-  margin-top: 10vh;
+  margin-top: 9vh;
 }
 .section-portfolio__cto-link:hover {
   color: #b1aea5;
