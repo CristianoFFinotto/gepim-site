@@ -82,7 +82,7 @@ if (screen.width >= 992) {
 
 gsap.from('.section-partner__logo', {
     scrollTrigger: { trigger: ".section-partner", start: 'top 1px', toggleActions: 'restart' },
-    duration: 0.5, xPercent: -500, opacity: 0, clearProps: 'all', stagger: 1
+    duration: 0.5, xPercent: -500, opacity: 0, clearProps: 'all', stagger: 0.5
 });
 
 
