@@ -12,13 +12,13 @@
 
   &__title {
     color: variable.$cto;
-    font-size: 12vw;
+    font-size: 1.5rem;
     font-weight: bold;
   }
 
   &__link {
     font-weight: bold;
-    font-size: 8vw;
+    font-size: 1.5rem;
     border-bottom: 2px solid variable.$cto;
     color: variable.$header-expand-mobile-tablet;
   }

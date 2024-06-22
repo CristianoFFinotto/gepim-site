@@ -19,7 +19,7 @@
 @import "./section/section-intro.scss";
 @import "./section/section-portfolio.scss";
 @import "./section/section-service.scss";
-@import "./section/section-partner.scss";
+@import "./section/section-office.scss";
 @import "./section/section-footer.scss";
 @import "./section/section-maps.scss";
 @import "./section/404.scss";
@@ -30,16 +30,18 @@
 @import "./tools/query.scss";
 
 html {
-  body {
-    color: variable.$text-color;
-    background-color: variable.$background-color;
-    font-family: "itim";
-    height: 100%;
-    width: 100%;
-  }
+  font-size: 100%;
   height: 100%;
   width: 100%;
   overflow-y: overlay;
   overflow-x: hidden;
   scroll-behavior: smooth !important;
+
+  body {
+    color: variable.$text-color;
+    background-color: variable.$background-color;
+    font-family: "itim";
+    height: inherit;
+    width: inherit;
+  }
 }
