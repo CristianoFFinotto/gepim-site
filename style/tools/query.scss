@@ -34,7 +34,7 @@
 
   .section-intro {
     &__text {
-      font-size: 1.5rem;
+      font-size: 2.2vw;
     }
 
     &__image {
@@ -76,7 +76,7 @@
     }
   }
 
-  .section-office {
+  .section-partner {
     padding-top: 30vh;
     &__title {
       font-size: 6vw;
@@ -102,70 +102,6 @@
 
   .section-maps {
     padding-top: 40vh;
-  }
-}
-
-@media (max-device-width: 980px) {
-  .section-intro {
-    &__text {
-      font-size: 1.5rem;
-    }
-  }
-}
-
-@media (min-device-width: 400px) {
-  .section-intro {
-    &__text {
-      font-size: 1.5rem;
-    }
-  }
-}
-
-@media (max-device-width: 470px) {
-  .section-intro {
-    &__text {
-      font-size: 1.1rem;
-    }
-  }
-}
-
-@media (min-device-width: 470px)and (max-device-width: 580px)  {
-  .section-intro {
-    &__text {
-      font-size: 1.1rem !important;
-    }
-  }
-}
-
-@media (min-device-width: 570px) and (max-device-width: 770px) {
-  .section-intro {
-    &__text {
-      font-size: 1.1rem !important;
-    }
-  }
-}
-
-@media (min-device-width: 782px) and (max-device-width: 800px) {
-  .section-intro {
-    &__text {
-      font-size: 1.1rem !important;
-    }
-  }
-}
-
-@media (min-device-width: 800px) {
-  .section-intro {
-    &__text {
-      font-size: 1.5rem !important;
-    }
-  }
-}
-
-@media (min-device-width: 1200px) {
-  .section-intro {
-    &__text {
-      font-size: 1.8rem !important;
-    }
   }
 }
 
@@ -236,7 +172,7 @@
     }
   }
 
-  .section-office {
+  .section-partner {
     &__logo {
       transform: scale(0.8);
     }
@@ -305,7 +241,7 @@
     }
   }
 
-  .section-office {
+  .section-partner {
     &__logo {
       opacity: 1 !important;
     }
@@ -357,7 +293,7 @@
 
 /* PC */
 
-@media (max-width: 1366px) {
+@media (min-width: 992px) {
   .header {
     height: auto;
     background-color: transparent;
@@ -452,13 +388,13 @@
     height: 100%;
     &__title {
       position: relative;
-      font-size: 2.5rem;
+      font-size: 4vw;
       width: 30%;
       padding: 0;
       left: 5vw;
 
       &--underlined {
-        font-size: 2.5rem;
+        font-size: 4.5vw;
       }
     }
 
@@ -511,7 +447,7 @@
     }
   }
 
-  .section-office {
+  .section-partner {
     padding-top: 15vh;
     &__title {
       font-size: 4.5vw;
@@ -524,6 +460,41 @@
       margin-top: 20vh;
     }
 
+    .col-lg-3:nth-child(1) {
+      .section-partner__logo {
+        transform: scale(0.6);
+      }
+    }
+    .col-lg-3:nth-child(2) {
+      .section-partner__logo {
+        transform: scale(0.8);
+      }
+    }
+    .col-lg-3:nth-child(3) {
+      .section-partner__logo {
+        transform: scale(0.8);
+      }
+    }
+    .col-lg-3:nth-child(4) {
+      .section-partner__logo {
+        transform: scale(1);
+      }
+    }
+    .col-lg-3:nth-child(5) {
+      .section-partner__logo {
+        transform: scale(1);
+      }
+    }
+    .col-lg-3:nth-child(6) {
+      .section-partner__logo {
+        transform: scale(1);
+      }
+    }
+    .col-lg-3:nth-child(7) {
+      .section-partner__logo {
+        transform: scale(1);
+      }
+    }
     &__logo {
       opacity: 0.5;
     }
@@ -534,222 +505,13 @@
   }
 
   .section-footer {
-    font-size: 1.2rem;
+    font-size: 1.1vw;
 
     &-content {
       &-credits {
         font-size: 1.1vw;
       }
     }
-  }
-
-  .section-footer-content-credits {
-    font-size: 1rem;
-  }
-
-  .section-maps {
-    padding-top: 10vh;
-  }
-
-  .section-404 {
-    &__title {
-      font-size: 4vw;
-    }
-
-    &__link {
-      font-size: 2vw;
-    }
-  }
-}
-
-@media (min-width: 1367px) {
-  .header {
-    height: auto;
-    background-color: transparent;
-    padding-top: 3%;
-    &__navbar {
-      .navbar__list {
-        justify-content: space-around;
-        font-size: 1vw;
-        position: static;
-        width: auto;
-        align-items: center;
-
-        li {
-          text-align: initial;
-        }
-
-        li:nth-of-type(1) {
-          text-align: center;
-        }
-
-        li:nth-child(4) {
-          a {
-            border-bottom: 2px solid variable.$cto;
-            padding-bottom: 2px;
-          }
-        }
-
-        /*** CTO ***/
-
-        li:last-of-type {
-          background-color: variable.$cto;
-          border-radius: 10px;
-          height: 100%;
-          display: flex;
-          align-items: center;
-          padding: 20px;
-          a {
-            font-weight: bolder;
-            font-style: italic;
-          }
-        }
-
-        li:last-of-type:hover {
-          filter: drop-shadow(5px 5px 10px variable.$background-color);
-        }
-
-        /*** - ***/
-
-        &-link {
-          border-bottom: none;
-        }
-      }
-    }
-  }
-
-  .section-title {
-    margin-top: 2vh;
-    &__title {
-      font-size: 4vw;
-    }
-
-    &__sub-title {
-      font-size: 1.5vw;
-    }
-
-    em {
-      font-size: 1vw;
-    }
-  }
-
-  .section-intro {
-    &__text {
-      font-size: 2.2rem !important;
-      text-align: justify;
-    }
-
-    &__image {
-      width: 50%;
-      height: 70%;
-    }
-  }
-
-  .container-arrow {
-    bottom: 3vh;
-    &__arrow {
-      height: 50px;
-      width: 50px;
-    }
-  }
-
-  .section-portfolio {
-    height: 100%;
-    &__title {
-      position: relative;
-      font-size: 3.5rem;
-      width: 30%;
-      padding: 0;
-      left: 5vw;
-
-      &--underlined {
-        font-size: 3.5rem;
-      }
-    }
-
-    .col-11:nth-child(1) {
-      position: relative;
-      top: 20vh;
-    }
-
-    .col-11:nth-child(2) {
-      position: relative;
-      top: 10vh;
-    }
-
-    .col-11:nth-child(3) {
-      position: relative;
-    }
-
-    &__cto {
-      position: initial;
-    }
-
-    &__figcaption-image {
-      font-size: 1vw;
-    }
-
-    /*** CTO ***/
-
-    &__cto {
-      font-size: 2vw;
-      width: auto;
-      height: auto;
-      position: relative;
-      right: 5vw;
-      top: -12vh;
-    }
-
-    /*** - ***/
-  }
-
-  .section-service {
-    &__title {
-      font-size: 4vw;
-      margin-top: 0;
-      margin-bottom: 8vh;
-    }
-    &__image {
-      &-caption {
-        font-size: 1.5vw;
-      }
-    }
-  }
-
-  .section-office {
-    padding-top: 15vh;
-    &__title {
-      font-size: 4.5vw;
-    }
-    &__logo {
-      transform: scale(0.7);
-    }
-
-    .row {
-      margin-top: 20vh;
-    }
-
-    &__logo {
-      opacity: 0.5;
-    }
-
-    &__logo:hover {
-      opacity: 1;
-    }
-  }
-
-  .section-footer {
-    font-size: 1.2rem;
-
-    &-content {
-      &-credits {
-        font-size: 1.1vw;
-      }
-    }
-  }
-
-  .section-footer-content-credits {
-    font-size: 1rem;
   }
 
   .section-maps {

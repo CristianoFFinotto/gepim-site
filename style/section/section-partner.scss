@@ -1,0 +1,35 @@
+.section-partner {
+  background-color: variable.$section-color;
+  padding-top: 10vh;
+  overflow-x: hidden;
+
+  &__title {
+    font-size: 8vw;
+    font-style: italic;
+    text-align: center;
+    width: fit-content;
+    position: relative;
+    background-color: transparent;
+    z-index: 1;
+  }
+
+  &__title::before {
+    content: "";
+    height: calc(100% + 2vh);
+    width: calc(100% + 2vw);
+    position: absolute;
+    left: -1vw;
+    top: -1vh;
+    background-color: variable.$cto;
+    transform: rotate(-2deg);
+    z-index: -1;
+    border-radius: 10px;
+  }
+
+  .row {
+    margin-top: 10vh;
+    padding-bottom: 10vh;
+    display: flex;
+    justify-content: center;
+  }
+}
