@@ -1,0 +1,1 @@
+{"mappings":"AAAA,MAAM,cAAc,SAAS,aAAa,CAAC;AAE3C,YAAY,WAAW,GAAG,IAAI,OAAO,WAAW","sources":["script/year.js"],"sourcesContent":["const currentDate = document.querySelector('#date');\n\ncurrentDate.textContent = new Date().getFullYear();\n\n\n\n\n\n\n"],"names":[],"version":3,"file":"index.2db17ae5.js.map","sourceRoot":"/__parcel_source_root/"}
